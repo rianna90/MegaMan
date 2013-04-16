@@ -151,7 +151,7 @@
     <Reference Include="IKVM.Runtime">
       <HintPath>libs\ios\ikvm\bin\IKVM.Runtime.dll</HintPath>
     </Reference>
-	<Reference Include="libObjectAL">
+    <Reference Include="libObjectAL">
       <HintPath>libs\ios\objectal\libObjectAL.dll</HintPath>
     </Reference>
     <Reference Include="my-gdx-game">
@@ -174,5 +174,6 @@
     <Content Include="..\my-gdx-game-android\assets\data\libgdx.png">
       <Link>data\libgdx.png</Link>
     </Content>
+    <Content Include="libgdx.png" />
   </ItemGroup>
 </Project>

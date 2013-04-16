@@ -1,0 +1,1 @@
+--debug --aot=mtriple=armv7-darwin,full,static,asmonly,direct-icalls,soft-debug,no-direct-calls,iphone-abi,outfile=/my-gdx-game.dll.armv7.s "/Users/rianneoverweg/Documents/MegaMan/MegaMan/my-gdx-game-ios/bin/iPhone/Debug/my-gdx-game.dll"

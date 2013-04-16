@@ -1,0 +1,1 @@
+--debug --aot=mtriple=armv7-darwin,full,static,asmonly,direct-icalls,no-direct-calls,iphone-abi,outfile=/Mono.Security.dll.armv7.s "/Users/rianneoverweg/Documents/MegaMan/MegaMan/my-gdx-game-ios/bin/iPhone/Debug/mygdxgameios.app/Mono.Security.dll"
