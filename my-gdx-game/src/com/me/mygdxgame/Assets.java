@@ -7,12 +7,10 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 public class Assets {
 	
 	public static Texture background;
-<<<<<<< HEAD
-=======
 	public static Texture megaman;
 	public static Animation megamanWalk;
 	
->>>>>>> Megaman animatie (nog niet werkend)
+
 	public static Texture loadTexture (String file){
 		return new Texture(Gdx.files.internal(file));
 	}
