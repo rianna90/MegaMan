@@ -18,9 +18,9 @@ public class Animation {
 	int frameNumber = (int)(stateTime / frameDuration);
 	
 	if (mode == ANIMATION_NONLOOPING) {
-	frameNumber = Math.min(keyFrames.length - 1, frameNumber);
+		frameNumber = Math.min(keyFrames.length - 1, frameNumber);
 	} else {
-	frameNumber = frameNumber % keyFrames.length;
+		frameNumber = frameNumber % keyFrames.length;
 	}
 	return keyFrames[frameNumber];
 	}
