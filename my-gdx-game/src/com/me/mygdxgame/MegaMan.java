@@ -1,64 +1,46 @@
 package com.me.mygdxgame;
 
-public class MegaMan extends DynamicGameObject {
-	public static final int BOB_STATE_JUMP = 0;
-	public static final int BOB_STATE_FALL = 1;
-	public static final int BOB_STATE_HIT = 2;
-	public static final float BOB_JUMP_VELOCITY = 11;
-	public static final float BOB_MOVE_VELOCITY = 20;
-	public static final float BOB_WIDTH = 0.8f;
-	public static final float BOB_HEIGHT = 0.8f;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.math.Rectangle;
+import com.badlogic.gdx.scenes.scene2d.Actor;
+
+public class MegaMan extends Actor {
 	
-	int state;
-	float stateTime;
+    private int _currentFrame = 1;
+    private int _frameWidth = 40;
+    private int _animationTime = 40;
+    private int _currentAnimationTime = 0;
+
+    private float _timer = 0.2f;
+    private float _TIMER = 0.2f;
+
+    MyGdxGame game;
+    
+	public MegaMan (MyGdxGame game) 
+	{
+		this.game = game;
+
+	}
 	
-	public MegaMan (float x, float y) {
-			super(x, y, BOB_WIDTH, BOB_HEIGHT);
-			state = BOB_STATE_FALL;
-			stateTime = 0;
-		}
-		
-		public void update (float deltaTime) {
-			//velocity.add(World.gravity.x * deltaTime, World.gravity.y * deltaTime);
-			position.add(velocity.x * deltaTime, velocity.y * deltaTime);
-			bounds.x = position.x - bounds.width / 2;
-			bounds.y = position.y - bounds.height / 2;
-			
-			if (velocity.y > 0 && state != BOB_STATE_HIT) {
-				if (state != BOB_STATE_JUMP) {
-				state = BOB_STATE_JUMP;
-				stateTime = 0;
-				}
-			}
-			
-			if (velocity.y < 0 && state != BOB_STATE_HIT) {
-				if (state != BOB_STATE_FALL) {
-				state = BOB_STATE_FALL;
-				stateTime = 0;
-				}
-			}
-			
-			//if (position.x < 0) position.x = World.WORLD_WIDTH;
-			//if (position.x > World.WORLD_WIDTH) position.x = 0;
-			
-			stateTime += deltaTime;
-		}
-		
-		public void hitSquirrel () {
-			velocity.set(0, 0);
-			state = BOB_STATE_HIT;
-			stateTime = 0;
-		}
-		
-		public void hitPlatform () {
-			velocity.y = BOB_JUMP_VELOCITY;
-			state = BOB_STATE_JUMP;
-			stateTime = 0;
-		}
-		
-		public void hitSpring () {
-			velocity.y = BOB_JUMP_VELOCITY * 1.5f;
-			state = BOB_STATE_JUMP;
-			stateTime = 0;
-		}
+    private Rectangle getCurrentFrame()
+    {
+        return new Rectangle(_frameWidth * _currentFrame, 0, 40, 40);
+    }
+    
+    private void AnimateSpaceship()
+    {
+        _currentAnimationTime += Gdx.graphics.getDeltaTime();//gameTime.ElapsedGameTime.Milliseconds;
+
+        if (_currentAnimationTime > _animationTime)
+        {
+            _currentFrame++;
+            _currentAnimationTime = 0;
+        }
+    }
+    
+    public void render ()
+    {
+    	//MyGdxGame.batch.draw(Assets.megaman, 0, 0);
+    	
+    }
 }

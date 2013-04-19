@@ -7,9 +7,7 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 public class Assets {
 	
 	public static Texture background;
-	public static Texture megaman;
-	public static Animation megamanWalk;
-	
+	public static Texture megaman;	
 
 	public static Texture loadTexture (String file){
 		return new Texture(Gdx.files.internal(file));
@@ -17,9 +15,7 @@ public class Assets {
 		
 	public static void load(){
 		megaman = loadTexture("megaman.png");		
-		background = loadTexture("background.jpg");
-		
-		megamanWalk = new Animation(0.2f, new TextureRegion(megaman, 0, 0, 36, 33), new TextureRegion(megaman, 33, 0, 36, 33));		
+		background = loadTexture("background.jpg");	
 	}
 
 }
