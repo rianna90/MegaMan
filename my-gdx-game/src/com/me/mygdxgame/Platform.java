@@ -3,7 +3,7 @@ package com.me.mygdxgame;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
-public class Platform extends Game{
+public class Platform extends Game {
 	SpriteBatch spritebatch;
 
 	public void render(){

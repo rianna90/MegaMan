@@ -27,7 +27,7 @@ public class MegaMan extends Actor {
         return new Rectangle(_frameWidth * _currentFrame, 0, 40, 40);
     }
     
-    private void AnimateSpaceship()
+    private void AnimateMegaman()
     {
         _currentAnimationTime += Gdx.graphics.getDeltaTime();//gameTime.ElapsedGameTime.Milliseconds;
 

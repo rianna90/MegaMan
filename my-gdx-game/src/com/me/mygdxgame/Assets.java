@@ -7,6 +7,9 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
 public class Assets {
 	
+	public static Texture splash;
+	public static Texture bg;
+	public static Texture playBtn;
 	public static Texture background;
 	public static Texture megaman;	
 	public static Animation megamanWalk;
@@ -18,8 +21,13 @@ public class Assets {
 	}
 		
 	public static void load(){
-		megaman = loadTexture("megaman.png");		
-
+		
+		splash = loadTexture("libgdx.png");
+			
+		bg = loadTexture("bg.jpg");	
+		playBtn = loadTexture("playButton.png");
+		
+		megaman = loadTexture("megaman.png");	
 		background = loadTexture("background.jpg");	
 		background = loadTexture("background.jpg");
 		platformBase = loadTexture("bottomGround.png");
