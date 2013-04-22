@@ -1,7 +1,6 @@
 package com.me.mygdxgame;
 
 import com.badlogic.gdx.Game;
-import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 public class Platform extends Game{
