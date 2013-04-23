@@ -1,4 +1,5 @@
 package com.me.mygdxgame;
+
 import java.awt.Font;
 
 import com.badlogic.gdx.Game;
@@ -7,25 +8,22 @@ import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector3;
-
 
 public class StartScreen implements Screen, InputProcessor {
 	
 	private SpriteBatch spriteBatch;
 	private OrthographicCamera camera;
     private Game myGame;
-    public static String string = "hello";
-    public static Font font;
-    String homeText;
+    private Sprite playBtn;
+    private String homeText;
+    public static Font font;    
     public int number;
     public Vector3 touchpoint;
-    private Sprite playBtn;
     
-    //hoi
+    
 	public StartScreen(Game g)
 	{
 		myGame = g;
@@ -91,65 +89,51 @@ public class StartScreen implements Screen, InputProcessor {
 
 	@Override
 	public boolean keyDown(int keycode) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean keyUp(int keycode) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean keyTyped(char character) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
+	// Start btn
 	@Override
 	public boolean touchDown(int screenX, int screenY, int pointer, int button) {
-		
-		touchpoint.set(screenX, screenY, 0);
-		Gdx.app.log("hoi", "touchpoint");
+
+		touchpoint = new Vector3(screenX, screenY, 0);
 		camera.unproject(touchpoint);
 		
 		if(playBtn.getBoundingRectangle().contains(touchpoint.x, touchpoint.y))
-				{
-					Gdx.app.log("hoooi", "hij doet het");
-				}
-		else
-				{
-					Gdx.app.log("hoooi", "hij doet het niet");
-				}
-		
+		{
+			myGame.setScreen(new GameScreen(myGame));
+		}
 		return true;
 	}
 
 	@Override
 	public boolean touchUp(int screenX, int screenY, int pointer, int button) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean touchDragged(int screenX, int screenY, int pointer) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean mouseMoved(int screenX, int screenY) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean scrolled(int amount) {
-		// TODO Auto-generated method stub
 		return false;
 	}
-	
-
 }
 
