@@ -25,7 +25,7 @@ public class StartScreen implements Screen, InputProcessor {
     public Vector3 touchpoint;
     private Sprite playBtn;
     
-    
+    //hoi
 	public StartScreen(Game g)
 	{
 		myGame = g;
