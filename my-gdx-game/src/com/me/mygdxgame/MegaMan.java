@@ -1,46 +1,46 @@
 package com.me.mygdxgame;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.math.Rectangle;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 
 public class MegaMan extends Actor {
 	
-    private int _currentFrame = 1;
-    private int _frameWidth = 40;
-    private int _animationTime = 40;
-    private int _currentAnimationTime = 0;
-
-    private float _timer = 0.2f;
-    private float _TIMER = 0.2f;
-
-    MyGdxGame game;
+    private int _currentFrame = 0;
+    private int _frameWidth = 36;
+    private float _animationTime = 0.1f;
+    private float _currentAnimationTime = 0;
     
-	public MegaMan (MyGdxGame game) 
+	public MegaMan () 
 	{
-		this.game = game;
 
 	}
 	
-    private Rectangle getCurrentFrame()
-    {
-        return new Rectangle(_frameWidth * _currentFrame, 0, 40, 40);
-    }
-    
-    private void AnimateMegaman()
-    {
-        _currentAnimationTime += Gdx.graphics.getDeltaTime();//gameTime.ElapsedGameTime.Milliseconds;
-
-        if (_currentAnimationTime > _animationTime)
-        {
+	public void act(float delta)
+	{
+		_currentAnimationTime += Gdx.graphics.getDeltaTime();//gameTime.ElapsedGameTime.Milliseconds;
+		
+        if (_currentAnimationTime >= _animationTime)
+        {       	
             _currentFrame++;
             _currentAnimationTime = 0;
+            
+            if(_currentFrame == 4)
+            {
+            	_currentFrame = 0;
+            }
         }
+	}
+	
+    private TextureRegion getCurrentFrame()
+    {
+        return new TextureRegion(Assets.megaman,_frameWidth * _currentFrame, 0, 36, 33);
     }
     
-    public void render ()
-    {
-    	//MyGdxGame.batch.draw(Assets.megaman, 0, 0);
-    	
-    }
+	@Override
+	public void draw(SpriteBatch batch, float parentAlpha) {
+		
+		batch.draw(getCurrentFrame(), 100, 25);
+	}
 }

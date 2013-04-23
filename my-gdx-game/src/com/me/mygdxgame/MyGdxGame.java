@@ -11,7 +11,8 @@ public class MyGdxGame extends Game {
 
 		Assets.load();
 		
-		setScreen(new SplashScreen(this));
+		//setScreen(new SplashScreen(this));
+		setScreen(new GameScreen(this));
 	}
 
 	@Override

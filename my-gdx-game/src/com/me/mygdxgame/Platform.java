@@ -1,33 +1,16 @@
 package com.me.mygdxgame;
 
-import com.badlogic.gdx.Game;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.scenes.scene2d.Actor;
 
-public class Platform extends Game {
+public class Platform extends Actor {
 	SpriteBatch spritebatch;
 
-	public void render(){
-		renderPlatform();
-	}
-	
-	public void renderPlatform(){
-		spritebatch.draw(Assets.platformMiddle, 100,100);
-		spritebatch.draw(Assets.platformBase,  0, 0, 800, 28, 0, 0, 800, 28, false, false);
-	}
-
 	@Override
-	public void create() {
-
+	public void draw(SpriteBatch batch, float parentAlpha) {
+		batch.draw(Assets.platformMiddle, 100,100);
+		batch.draw(Assets.platformBase,  0, 0, 800, 28, 0, 0, 800, 28, false, false);
 	}
-
-	public SpriteBatch getSpritebatch() {
-		return spritebatch;
-	}
-
-	public void setSpritebatch(SpriteBatch spritebatch) {
-		this.spritebatch = spritebatch;
-	}
-	
 
 }
 

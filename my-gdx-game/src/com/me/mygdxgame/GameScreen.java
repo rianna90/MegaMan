@@ -1,9 +1,15 @@
 package com.me.mygdxgame;
 
 import com.badlogic.gdx.Game;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.scenes.scene2d.Actor;
+import com.badlogic.gdx.scenes.scene2d.InputEvent;
+import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.*;
+import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 
 public class GameScreen implements Screen {
 
@@ -11,6 +17,9 @@ public class GameScreen implements Screen {
 	private OrthographicCamera camera;
 	private Game myGame;
 	private Platform platform;
+	private Stage stage;
+	private MegaMan mm;
+	private Button btn;
 	
 	public GameScreen(Game g) {		
 		
@@ -19,18 +28,27 @@ public class GameScreen implements Screen {
 	
 	@Override
 	public void render(float delta) {
+		Gdx.input.setInputProcessor(stage);
+		
 	    camera.update();		
 	    spriteBatch.setProjectionMatrix(camera.combined);
 		
-	    spriteBatch.begin();		
-	    spriteBatch.draw(Assets.background, 0, 0);
-
-	    //platform.setSpritebatch(spriteBatch);
-	    //platform.renderPlatform();
-	    //spriteBatch = platform.getSpritebatch();
+	    spriteBatch.begin();	
+	    stage.draw();
 	    spriteBatch.end();	
+	    
+	    
+	    spriteBatch.begin();		    
+	    spriteBatch.draw(Assets.background, 0, 0);	   
+	    platform.draw(spriteBatch, delta);
+	    
+	    btn.draw(spriteBatch, delta);
+	    mm.draw(spriteBatch, delta);
+	    mm.act(delta); 
+	    
+	    spriteBatch.end();	   
 	}
-
+	
 	@Override
 	public void resize(int width, int height) {
 		
@@ -38,8 +56,16 @@ public class GameScreen implements Screen {
 
 	@Override
 	public void show() {
-
-		//platform.create();	
+		
+		stage = new Stage(Gdx.graphics.getWidth(),Gdx.graphics.getHeight(), true);
+		
+		mm = new MegaMan();
+		btn = new Button();
+		
+		stage.addActor(mm);
+		stage.addActor(btn);
+		
+		platform = new Platform();	
 		spriteBatch = new SpriteBatch();
 		
 		camera = new OrthographicCamera();
