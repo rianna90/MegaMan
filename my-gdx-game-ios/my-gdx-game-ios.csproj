@@ -170,7 +170,35 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\libgdx.png" />
+<<<<<<< HEAD
     <Content Include="data\libgdx.png" />
+=======
+    <Content Include="assets\bg.jpg" />
+    <Content Include="assets\charfullbody.png" />
+    <Content Include="assets\homebg.png" />
+    <Content Include="assets\menubg.png" />
+    <Content Include="assets\playButton.png" />
+    <Content Include="assets\bottomGround.png" />
+    <Content Include="assets\floatGroundLeft.png" />
+    <Content Include="assets\floatGroundMiddle.png" />
+    <Content Include="assets\floatGroundRight.png" />
+    <Content Include="assets\font.fnt" />
+    <Content Include="assets\font.png" />
+    <Content Include="assets\megaman.png" />
+    <Content Include="data\libgdx.png" />
+    <Content Include="data\bg.jpg" />
+    <Content Include="data\bottomGround.png" />
+    <Content Include="data\charfullbody.png" />
+    <Content Include="data\floatGroundLeft.png" />
+    <Content Include="data\floatGroundMiddle.png" />
+    <Content Include="data\floatGroundRight.png" />
+    <Content Include="data\font.fnt" />
+    <Content Include="data\font.png" />
+    <Content Include="data\homebg.png" />
+    <Content Include="data\megaman.png" />
+    <Content Include="data\menubg.png" />
+    <Content Include="data\playButton.png" />
+>>>>>>> Rianne
     <Content Include="libs\libgdx.png" />
     <Content Include="libgdx.png" />
   </ItemGroup>

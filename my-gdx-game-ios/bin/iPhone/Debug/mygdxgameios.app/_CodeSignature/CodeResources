@@ -58,11 +58,19 @@
 		</data>
 		<key>Mono.Security.dll</key>
 		<data>
+<<<<<<< HEAD
 		vgk1JyzSyQp2OeA/GD2xk/SOmME=
 		</data>
 		<key>Mono.Security.dll.mdb</key>
 		<data>
 		VGpiJbgiOq99DMFR85fA2yubEC8=
+=======
+		yu6XC3qSN9G8Bwzm7JuG06/qEdY=
+		</data>
+		<key>Mono.Security.dll.mdb</key>
+		<data>
+		+YAtjfmb8cb2e4lerbO+prIvWMY=
+>>>>>>> Rianne
 		</data>
 		<key>MonoTouchDebugConfiguration.txt</key>
 		<data>
@@ -70,7 +78,11 @@
 		</data>
 		<key>OpenTK-1.0.dll</key>
 		<data>
+<<<<<<< HEAD
 		fkjscrnaoLW2ToC71gaNPyStHOo=
+=======
+		tT5FMtTgQAiRYE7nyMNQwBbNMRs=
+>>>>>>> Rianne
 		</data>
 		<key>OpenTK-1.0.dll.config</key>
 		<data>
@@ -78,7 +90,11 @@
 		</data>
 		<key>OpenTK-1.0.dll.mdb</key>
 		<data>
+<<<<<<< HEAD
 		1Iz/arKWBzPvXzcRqmi8M/OMQ9w=
+=======
+		lrE8GETGK8Bi7p95QWhCdKmFzoI=
+>>>>>>> Rianne
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -90,6 +106,7 @@
 		</data>
 		<key>System.Core.dll</key>
 		<data>
+<<<<<<< HEAD
 		tXof9Ia4dPEwJ80ib7AkBYId01M=
 		</data>
 		<key>System.Core.dll.mdb</key>
@@ -111,6 +128,133 @@
 		<key>System.dll.mdb</key>
 		<data>
 		Nr6FZiZ2iO2SB+LiTgWutJaCuj8=
+=======
+		mHiK/gBQyJ3M78XLMP0yuQdZwys=
+		</data>
+		<key>System.Core.dll.mdb</key>
+		<data>
+		r3wlqxS3ARXK9DXFoT7xEF7Uiq8=
+		</data>
+		<key>System.Xml.dll</key>
+		<data>
+		KMFk1m/eVRCIRTD/zAW6oYORDn4=
+		</data>
+		<key>System.Xml.dll.mdb</key>
+		<data>
+		QQBZfpUtZ8FVpblDX4Kll01CkiM=
+		</data>
+		<key>System.dll</key>
+		<data>
+		XFSyDgftRRgvpflYg4Y6gbtKYaE=
+		</data>
+		<key>System.dll.mdb</key>
+		<data>
+		oKK4uHqlbOTcIId3m4lCbsO8EKE=
+		</data>
+		<key>assets/bg.jpg</key>
+		<data>
+		hbeqsdVMmPkXnWnbFYoHLzle8PQ=
+		</data>
+		<key>assets/bottomGround.png</key>
+		<data>
+		Yvw6suEgd+EZcrzPcYgat3ts3ig=
+		</data>
+		<key>assets/charfullbody.png</key>
+		<data>
+		3oDLMKJLLmdAvu803n9Aetz5SpA=
+		</data>
+		<key>assets/floatGroundLeft.png</key>
+		<data>
+		hPI6nYKP7km+rXT/drhKwwkMMxk=
+		</data>
+		<key>assets/floatGroundMiddle.png</key>
+		<data>
+		3CVfymj3muL1Vi8SeDZUfM92I/0=
+		</data>
+		<key>assets/floatGroundRight.png</key>
+		<data>
+		VvLbKi219dC/W32FM+T7N2ZP8eE=
+		</data>
+		<key>assets/font.fnt</key>
+		<data>
+		DH+2WKZQ8NDdXiXYyOhqF+qQ9Dg=
+		</data>
+		<key>assets/font.png</key>
+		<data>
+		NqcM0Uwn2ekumhpXvR2IZxwASQo=
+		</data>
+		<key>assets/homebg.png</key>
+		<data>
+		ayfFjIYWC2B64G+N5rrNVyMX59k=
+		</data>
+		<key>assets/libgdx.png</key>
+		<data>
+		H7pHRFP8D+CX4DbqwFeyVdNWzIA=
+		</data>
+		<key>assets/megaman.png</key>
+		<data>
+		bl/f0XIN+8G2sbxLI2xswLuCac4=
+		</data>
+		<key>assets/menubg.png</key>
+		<data>
+		xX4QIGkV9Jb2WVXsDstNKQddR9E=
+		</data>
+		<key>assets/playButton.png</key>
+		<data>
+		y6SxBunqPhjU+fClffK6cZ9r+vo=
+		</data>
+		<key>data/bg.jpg</key>
+		<data>
+		hbeqsdVMmPkXnWnbFYoHLzle8PQ=
+		</data>
+		<key>data/bottomGround.png</key>
+		<data>
+		Yvw6suEgd+EZcrzPcYgat3ts3ig=
+		</data>
+		<key>data/charfullbody.png</key>
+		<data>
+		3oDLMKJLLmdAvu803n9Aetz5SpA=
+		</data>
+		<key>data/floatGroundLeft.png</key>
+		<data>
+		hPI6nYKP7km+rXT/drhKwwkMMxk=
+		</data>
+		<key>data/floatGroundMiddle.png</key>
+		<data>
+		3CVfymj3muL1Vi8SeDZUfM92I/0=
+		</data>
+		<key>data/floatGroundRight.png</key>
+		<data>
+		VvLbKi219dC/W32FM+T7N2ZP8eE=
+		</data>
+		<key>data/font.fnt</key>
+		<data>
+		DH+2WKZQ8NDdXiXYyOhqF+qQ9Dg=
+		</data>
+		<key>data/font.png</key>
+		<data>
+		NqcM0Uwn2ekumhpXvR2IZxwASQo=
+		</data>
+		<key>data/homebg.png</key>
+		<data>
+		ayfFjIYWC2B64G+N5rrNVyMX59k=
+		</data>
+		<key>data/libgdx.png</key>
+		<data>
+		H7pHRFP8D+CX4DbqwFeyVdNWzIA=
+>>>>>>> Rianne
+		</data>
+		<key>data/megaman.png</key>
+		<data>
+		bl/f0XIN+8G2sbxLI2xswLuCac4=
+		</data>
+		<key>data/menubg.png</key>
+		<data>
+		xX4QIGkV9Jb2WVXsDstNKQddR9E=
+		</data>
+		<key>data/playButton.png</key>
+		<data>
+		y6SxBunqPhjU+fClffK6cZ9r+vo=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -142,10 +286,23 @@
 		</data>
 		<key>libObjectAL.dll</key>
 		<data>
+<<<<<<< HEAD
 		Jc1kaG/7PblgAxOU1jJ2/+qIPSY=
+=======
+		kCKqOvwzYRJ+eODv3fWjjIo8InU=
+		</data>
+		<key>libgdx.png</key>
+		<data>
+		H7pHRFP8D+CX4DbqwFeyVdNWzIA=
+>>>>>>> Rianne
+		</data>
+		<key>libs/libgdx.png</key>
+		<data>
+		H7pHRFP8D+CX4DbqwFeyVdNWzIA=
 		</data>
 		<key>monotouch.dll</key>
 		<data>
+<<<<<<< HEAD
 		MjmhtyJCSa6yelT7ZhDQfTrOHUA=
 		</data>
 		<key>monotouch.dll.mdb</key>
@@ -167,6 +324,29 @@
 		<key>my-gdx-game.dll.mdb</key>
 		<data>
 		GLGll+0nLz7kklDErrhJ5sUm2qw=
+=======
+		lahe31rdL39F+XoritaTDXclwBQ=
+		</data>
+		<key>monotouch.dll.mdb</key>
+		<data>
+		80KtV2VjYI0rTo5trrUu2TdhVZw=
+		</data>
+		<key>mscorlib.dll</key>
+		<data>
+		FKs3TqHVbRVUyFHJvZJ4QvLgbR4=
+		</data>
+		<key>mscorlib.dll.mdb</key>
+		<data>
+		L/LmO7lX9yzzRIy4LJaHB5/sYKU=
+		</data>
+		<key>my-gdx-game.dll</key>
+		<data>
+		9JlD6zS9QqoIu3e8TPyjhwERhjo=
+		</data>
+		<key>my-gdx-game.dll.mdb</key>
+		<data>
+		IZiDIi/JTvNa74OaKAIoJALttko=
+>>>>>>> Rianne
 		</data>
 	</dict>
 	<key>rules</key>

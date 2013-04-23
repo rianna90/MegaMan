@@ -1,6 +1,7 @@
 package com.me.mygdxgame;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
@@ -16,7 +17,9 @@ public class Assets{
 	public static Animation megamanWalk;
 	public static Texture platformBase;
 	public static Texture platformMiddle;
+
 	public static Texture btn;
+
 	public static Texture menubg;
 	public static Texture homebg;
 	public static Texture charfullbody;
@@ -41,9 +44,9 @@ public class Assets{
 		menubg = loadTexture("menubg.png");
 		homebg = loadTexture("homebg.png");
 		charfullbody = loadTexture("charfullbody.png");
-		
+
 		font = new BitmapFont(Gdx.files.internal("font.fnt"), Gdx.files.internal("font.png"), false);
-		
+
 		
 		btn = loadTexture("btn.png");	
 		megamanWalk = new Animation(0.2f, new TextureRegion(megaman, 0, 0, 36, 33), new TextureRegion(megaman, 33, 0, 36, 33));		

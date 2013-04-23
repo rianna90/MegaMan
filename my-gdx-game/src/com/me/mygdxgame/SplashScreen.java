@@ -31,7 +31,12 @@ public class SplashScreen implements Screen {
 
         time += delta;
         if(time >= 2){ 
+
         	myGame.setScreen(new MenuScreen(myGame));   
+
+        	myGame.setScreen(new StartScreen(myGame));   
+        	//myGame.setScreen(new GameScreen(myGame));
+
         }			
 	}
 
