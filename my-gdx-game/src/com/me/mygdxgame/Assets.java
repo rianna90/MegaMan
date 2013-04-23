@@ -17,14 +17,11 @@ public class Assets{
 	public static Animation megamanWalk;
 	public static Texture platformBase;
 	public static Texture platformMiddle;
-<<<<<<< HEAD
 	public static Texture btn;
-=======
 	public static Texture menubg;
 	public static Texture homebg;
 	public static Texture charfullbody;
 	public static BitmapFont font;
->>>>>>> Splashscreen and assets
 	
 	public static Texture loadTexture (String file){
 		return new Texture(Gdx.files.internal(file));
