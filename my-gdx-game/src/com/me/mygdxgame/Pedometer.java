@@ -25,8 +25,6 @@ public class Pedometer implements ApplicationListener {
 
 	@Override
 	public void render() {
-		Gdx.app.log("Pedometer", "render");
-		
 		float x = Gdx.input.getAccelerometerX();
 	    float y = Gdx.input.getAccelerometerY();
 	    float z = Gdx.input.getAccelerometerZ();

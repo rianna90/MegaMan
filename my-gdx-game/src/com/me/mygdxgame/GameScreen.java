@@ -22,6 +22,7 @@ public class GameScreen implements Screen,  InputProcessor  {
 	private Sprite rightArrowBtn;
     private Vector3 touchpoint;
     
+    private Pedometer pd;
     
 	public GameScreen(Game g) {		
 		
@@ -51,11 +52,14 @@ public class GameScreen implements Screen,  InputProcessor  {
         leftArrowBtn.draw(spriteBatch);
 	    
         rightArrowBtn = new Sprite(Assets.btn);
+        rightArrowBtn.rotate(180);
         rightArrowBtn.setPosition(100, 10);
         rightArrowBtn.draw(spriteBatch);
         
 	    spriteBatch.end();	  
 	    
+	    pd.render();
+	    	    
 	}
 	
 	@Override
@@ -76,6 +80,8 @@ public class GameScreen implements Screen,  InputProcessor  {
 		
 		camera = new OrthographicCamera();
 	    camera.setToOrtho(false, 800, 480);		
+	    
+	    pd = new Pedometer();
 	   
 	}
 
@@ -101,19 +107,19 @@ public class GameScreen implements Screen,  InputProcessor  {
 
 	@Override
 	public boolean keyDown(int keycode) {
-		// TODO Auto-generated method stub
+
 		return false;
 	}
 
 	@Override
 	public boolean keyUp(int keycode) {
-		// TODO Auto-generated method stub
+
 		return false;
 	}
 
 	@Override
 	public boolean keyTyped(char character) {
-		// TODO Auto-generated method stub
+
 		return false;
 	}
 
@@ -124,37 +130,42 @@ public class GameScreen implements Screen,  InputProcessor  {
 		
 		if(leftArrowBtn.getBoundingRectangle().contains(touchpoint.x, touchpoint.y))
 		{
-			Gdx.app.log("GameScreen", "Left!");
+			//mm.Animate();
+			mm.setSpeed(-1);			
 		}
+		
 		if(rightArrowBtn.getBoundingRectangle().contains(touchpoint.x, touchpoint.y))
 		{
-			Gdx.app.log("GameScreen", "Right");
+			//mm.Animate();
+			mm.setSpeed(1);			
 		}
 		
 		return true;
+		
 	}
 
 	@Override
 	public boolean touchUp(int screenX, int screenY, int pointer, int button) {
-		// TODO Auto-generated method stub
+	
+		mm.setSpeed(0);
 		return false;
 	}
 
 	@Override
 	public boolean touchDragged(int screenX, int screenY, int pointer) {
-		// TODO Auto-generated method stub
+
 		return false;
 	}
 
 	@Override
 	public boolean mouseMoved(int screenX, int screenY) {
-		// TODO Auto-generated method stub
+
 		return false;
 	}
 
 	@Override
 	public boolean scrolled(int amount) {
-		// TODO Auto-generated method stub
+
 		return false;
 	}
 
