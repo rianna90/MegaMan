@@ -1,16 +1,17 @@
 package com.me.mygdxgame;
 
 import com.badlogic.gdx.InputProcessor;
+import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 
-public class Button extends Actor implements InputProcessor {
+public class Button extends Sprite implements InputProcessor {
 
 	SpriteBatch spritebatch;
 
-	@Override
-	public void draw(SpriteBatch batch, float parentAlpha) {
-		batch.draw(Assets.btn, 10,10);
+	public Button()
+	{
+		
 	}
 
 	@Override
