@@ -52,7 +52,6 @@ public class Assets{
 		megamanWalk = new Animation(0.2f, new TextureRegion(megaman, 0, 0, 36, 33), new TextureRegion(megaman, 33, 0, 36, 33));		
 
 	}
-
 }
 
 
