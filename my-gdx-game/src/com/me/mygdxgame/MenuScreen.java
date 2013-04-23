@@ -1,5 +1,7 @@
 package com.me.mygdxgame;
 
+import java.awt.Font;
+
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
@@ -12,6 +14,10 @@ public class MenuScreen implements Screen {
 	private SpriteBatch spriteBatch;
 	private OrthographicCamera camera;
     private Game myGame;
+    public static String string = "hello";
+    public static Font font;
+    String homeText;
+    public int number;
     
 	public MenuScreen(Game g)
 	{
@@ -26,7 +32,12 @@ public class MenuScreen implements Screen {
 	   
         spriteBatch.begin();
         spriteBatch.draw(Assets.bg, 0, 0);
-        spriteBatch.draw(Assets.playBtn, 0, 0);
+        spriteBatch.draw(Assets.homebg, 80, 60);
+        spriteBatch.draw(Assets.charfullbody, 310, 170);
+        spriteBatch.draw(Assets.playBtn, 290, 100);
+        spriteBatch.draw(Assets.platformBase,  0, 0, 800, 28, 0, 0, 800, 28, false, false);
+        spriteBatch.setColor(1.0f, 1.0f, 1.0f, 1.0f);
+        Assets.font.draw(spriteBatch, homeText, 16, 480 - 20);
         spriteBatch.end();
 	}
 
@@ -37,9 +48,11 @@ public class MenuScreen implements Screen {
 
 	@Override
 	public void show() {
+		 number = 10;
+		 homeText = "Experience Points " + number;
 		 spriteBatch = new SpriteBatch();
 		 camera = new OrthographicCamera();
-		 camera.setToOrtho(false, 800, 480);	
+		 camera.setToOrtho(false, 800, 600);	
 	}
 
 	@Override
