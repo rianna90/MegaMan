@@ -7,8 +7,8 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
+import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.Stage;
-import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 
 public class GameScreen implements Screen {
@@ -21,23 +21,24 @@ public class GameScreen implements Screen {
 	private MegaMan mm;
 	private Button btn;
 	
+	private Pedometer pd;
+	
 	public GameScreen(Game g) {		
 		
 		myGame = g;
+		Gdx.input.setInputProcessor(stage);	
 	}
 	
 	@Override
 	public void render(float delta) {
-		Gdx.input.setInputProcessor(stage);
-		
+				
 	    camera.update();		
 	    spriteBatch.setProjectionMatrix(camera.combined);
 		
 	    spriteBatch.begin();	
 	    stage.draw();
 	    spriteBatch.end();	
-	    
-	    
+	    	    
 	    spriteBatch.begin();		    
 	    spriteBatch.draw(Assets.background, 0, 0);	   
 	    platform.draw(spriteBatch, delta);
@@ -46,7 +47,9 @@ public class GameScreen implements Screen {
 	    mm.draw(spriteBatch, delta);
 	    mm.act(delta); 
 	    
-	    spriteBatch.end();	   
+	    spriteBatch.end();	  
+	    
+	    pd.render();
 	}
 	
 	@Override
@@ -69,7 +72,9 @@ public class GameScreen implements Screen {
 		spriteBatch = new SpriteBatch();
 		
 		camera = new OrthographicCamera();
-	    camera.setToOrtho(false, 800, 480);			
+	    camera.setToOrtho(false, 800, 480);		
+	    
+	    pd = new Pedometer();
 	}
 
 	@Override
