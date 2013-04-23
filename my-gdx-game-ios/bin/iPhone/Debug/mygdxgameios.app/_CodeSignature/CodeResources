@@ -58,11 +58,11 @@
 		</data>
 		<key>Mono.Security.dll</key>
 		<data>
-		yu6XC3qSN9G8Bwzm7JuG06/qEdY=
+		vgk1JyzSyQp2OeA/GD2xk/SOmME=
 		</data>
 		<key>Mono.Security.dll.mdb</key>
 		<data>
-		+YAtjfmb8cb2e4lerbO+prIvWMY=
+		VGpiJbgiOq99DMFR85fA2yubEC8=
 		</data>
 		<key>MonoTouchDebugConfiguration.txt</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>OpenTK-1.0.dll</key>
 		<data>
-		tT5FMtTgQAiRYE7nyMNQwBbNMRs=
+		fkjscrnaoLW2ToC71gaNPyStHOo=
 		</data>
 		<key>OpenTK-1.0.dll.config</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>OpenTK-1.0.dll.mdb</key>
 		<data>
-		lrE8GETGK8Bi7p95QWhCdKmFzoI=
+		1Iz/arKWBzPvXzcRqmi8M/OMQ9w=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -90,131 +90,27 @@
 		</data>
 		<key>System.Core.dll</key>
 		<data>
-		mHiK/gBQyJ3M78XLMP0yuQdZwys=
+		tXof9Ia4dPEwJ80ib7AkBYId01M=
 		</data>
 		<key>System.Core.dll.mdb</key>
 		<data>
-		r3wlqxS3ARXK9DXFoT7xEF7Uiq8=
+		3Rv0x1IU9pr5qScCp/n4IxuAcPw=
 		</data>
 		<key>System.Xml.dll</key>
 		<data>
-		KMFk1m/eVRCIRTD/zAW6oYORDn4=
+		nQvNom7KQFA2ffOpyBI4/U5v0yU=
 		</data>
 		<key>System.Xml.dll.mdb</key>
 		<data>
-		QQBZfpUtZ8FVpblDX4Kll01CkiM=
+		gDd9eQn3bcVC6tbu1+tHhwHfo14=
 		</data>
 		<key>System.dll</key>
 		<data>
-		XFSyDgftRRgvpflYg4Y6gbtKYaE=
+		BaeJfqc0Ii0VPnWVfUqXqoLpsTA=
 		</data>
 		<key>System.dll.mdb</key>
 		<data>
-		oKK4uHqlbOTcIId3m4lCbsO8EKE=
-		</data>
-		<key>assets/bg.jpg</key>
-		<data>
-		hbeqsdVMmPkXnWnbFYoHLzle8PQ=
-		</data>
-		<key>assets/bottomGround.png</key>
-		<data>
-		Yvw6suEgd+EZcrzPcYgat3ts3ig=
-		</data>
-		<key>assets/charfullbody.png</key>
-		<data>
-		3oDLMKJLLmdAvu803n9Aetz5SpA=
-		</data>
-		<key>assets/floatGroundLeft.png</key>
-		<data>
-		hPI6nYKP7km+rXT/drhKwwkMMxk=
-		</data>
-		<key>assets/floatGroundMiddle.png</key>
-		<data>
-		3CVfymj3muL1Vi8SeDZUfM92I/0=
-		</data>
-		<key>assets/floatGroundRight.png</key>
-		<data>
-		VvLbKi219dC/W32FM+T7N2ZP8eE=
-		</data>
-		<key>assets/font.fnt</key>
-		<data>
-		DH+2WKZQ8NDdXiXYyOhqF+qQ9Dg=
-		</data>
-		<key>assets/font.png</key>
-		<data>
-		NqcM0Uwn2ekumhpXvR2IZxwASQo=
-		</data>
-		<key>assets/homebg.png</key>
-		<data>
-		ayfFjIYWC2B64G+N5rrNVyMX59k=
-		</data>
-		<key>assets/libgdx.png</key>
-		<data>
-		H7pHRFP8D+CX4DbqwFeyVdNWzIA=
-		</data>
-		<key>assets/megaman.png</key>
-		<data>
-		bl/f0XIN+8G2sbxLI2xswLuCac4=
-		</data>
-		<key>assets/menubg.png</key>
-		<data>
-		xX4QIGkV9Jb2WVXsDstNKQddR9E=
-		</data>
-		<key>assets/playButton.png</key>
-		<data>
-		y6SxBunqPhjU+fClffK6cZ9r+vo=
-		</data>
-		<key>data/bg.jpg</key>
-		<data>
-		hbeqsdVMmPkXnWnbFYoHLzle8PQ=
-		</data>
-		<key>data/bottomGround.png</key>
-		<data>
-		Yvw6suEgd+EZcrzPcYgat3ts3ig=
-		</data>
-		<key>data/charfullbody.png</key>
-		<data>
-		3oDLMKJLLmdAvu803n9Aetz5SpA=
-		</data>
-		<key>data/floatGroundLeft.png</key>
-		<data>
-		hPI6nYKP7km+rXT/drhKwwkMMxk=
-		</data>
-		<key>data/floatGroundMiddle.png</key>
-		<data>
-		3CVfymj3muL1Vi8SeDZUfM92I/0=
-		</data>
-		<key>data/floatGroundRight.png</key>
-		<data>
-		VvLbKi219dC/W32FM+T7N2ZP8eE=
-		</data>
-		<key>data/font.fnt</key>
-		<data>
-		DH+2WKZQ8NDdXiXYyOhqF+qQ9Dg=
-		</data>
-		<key>data/font.png</key>
-		<data>
-		NqcM0Uwn2ekumhpXvR2IZxwASQo=
-		</data>
-		<key>data/homebg.png</key>
-		<data>
-		ayfFjIYWC2B64G+N5rrNVyMX59k=
-		</data>
-		<key>data/libgdx.png</key>
-		<data>
-		H7pHRFP8D+CX4DbqwFeyVdNWzIA=
-		</data>
-		<key>data/megaman.png</key>
-		<data>
-		bl/f0XIN+8G2sbxLI2xswLuCac4=
-		</data>
-		<key>data/menubg.png</key>
-		<data>
-		xX4QIGkV9Jb2WVXsDstNKQddR9E=
-		</data>
-		<key>data/playButton.png</key>
-		<data>
-		y6SxBunqPhjU+fClffK6cZ9r+vo=
+		Nr6FZiZ2iO2SB+LiTgWutJaCuj8=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -246,39 +142,31 @@
 		</data>
 		<key>libObjectAL.dll</key>
 		<data>
-		kCKqOvwzYRJ+eODv3fWjjIo8InU=
-		</data>
-		<key>libgdx.png</key>
-		<data>
-		H7pHRFP8D+CX4DbqwFeyVdNWzIA=
-		</data>
-		<key>libs/libgdx.png</key>
-		<data>
-		H7pHRFP8D+CX4DbqwFeyVdNWzIA=
+		Jc1kaG/7PblgAxOU1jJ2/+qIPSY=
 		</data>
 		<key>monotouch.dll</key>
 		<data>
-		lahe31rdL39F+XoritaTDXclwBQ=
+		MjmhtyJCSa6yelT7ZhDQfTrOHUA=
 		</data>
 		<key>monotouch.dll.mdb</key>
 		<data>
-		80KtV2VjYI0rTo5trrUu2TdhVZw=
+		zY0ljhzVbOvGCzP+/RhMRo3Diuw=
 		</data>
 		<key>mscorlib.dll</key>
 		<data>
-		FKs3TqHVbRVUyFHJvZJ4QvLgbR4=
+		e1TxBmIL2WEJ+pQy/eVMik61mKo=
 		</data>
 		<key>mscorlib.dll.mdb</key>
 		<data>
-		L/LmO7lX9yzzRIy4LJaHB5/sYKU=
+		dp2/JPSZOxDWXpkSeKNjUlJDRX4=
 		</data>
 		<key>my-gdx-game.dll</key>
 		<data>
-		9JlD6zS9QqoIu3e8TPyjhwERhjo=
+		Z+rjSYlEu8bmhgUAQogK8iehJ1A=
 		</data>
 		<key>my-gdx-game.dll.mdb</key>
 		<data>
-		IZiDIi/JTvNa74OaKAIoJALttko=
+		GLGll+0nLz7kklDErrhJ5sUm2qw=
 		</data>
 	</dict>
 	<key>rules</key>
