@@ -14,10 +14,10 @@ public class Assets{
 	public static Texture playBtn;
 	public static Texture background;
 	public static Texture megaman;	
-	public static Animation megamanWalk;
+	public static Texture megamanJump;
 	public static Texture platformBase;
 	public static Texture platformMiddle;
-
+	
 	public static Texture btn;
 
 	public static Texture menubg;
@@ -37,6 +37,7 @@ public class Assets{
 		playBtn = loadTexture("playButton.png");
 		
 		megaman = loadTexture("megaman.png");	
+		megamanJump = loadTexture("manjump.png");
 		background = loadTexture("background.jpg");	
 		background = loadTexture("background.jpg");
 		platformBase = loadTexture("bottomGround.png");
@@ -46,11 +47,8 @@ public class Assets{
 		charfullbody = loadTexture("charfullbody.png");
 
 		font = new BitmapFont(Gdx.files.internal("font.fnt"), Gdx.files.internal("font.png"), false);
-
 		
 		btn = loadTexture("btn.png");	
-		megamanWalk = new Animation(0.2f, new TextureRegion(megaman, 0, 0, 36, 33), new TextureRegion(megaman, 33, 0, 36, 33));		
-
 	}
 }
 

@@ -16,13 +16,15 @@ public class MegaMan extends Actor {
     private int _posX;
     private int _posY;
     private int _speed;
+    public boolean left = false;
     
     public enum MegaManState
     {
         Standing,
     	WalkLeft,
     	WalkRight,
-        Jumping,
+        JumpLeft,
+        JumpRight,
         Dead
     }
     
@@ -35,7 +37,6 @@ public class MegaMan extends Actor {
 		_speed = 0;
 		
 		_megaMan = new Sprite(Assets.megaman);
-
 	}
 	
     public void setSpeed(int speed) 
@@ -54,7 +55,14 @@ public class MegaMan extends Actor {
 		if(state == MegaManState.Standing)
 		{
 			_speed = 0;
-			_currentFrame = 5;
+			if(left == true)
+			{
+				_currentFrame = 4;
+			}
+			else if(!left)
+			{
+				_currentFrame = 5;
+			}			
 		}
 		if(state == MegaManState.WalkLeft)
 		{
@@ -69,7 +77,7 @@ public class MegaMan extends Actor {
 	}
 	
 	private void AnimateRight() {
-		_currentAnimationTime += Gdx.graphics.getDeltaTime();//gameTime.ElapsedGameTime.Milliseconds;
+		_currentAnimationTime += Gdx.graphics.getDeltaTime();
 		
         if (_currentAnimationTime >= _animationTime)
         {       	
@@ -85,7 +93,7 @@ public class MegaMan extends Actor {
 
 	public void AnimateLeft()
 	{
-		_currentAnimationTime += Gdx.graphics.getDeltaTime();//gameTime.ElapsedGameTime.Milliseconds;
+		_currentAnimationTime += Gdx.graphics.getDeltaTime();
 		
         if (_currentAnimationTime >= _animationTime)
         {       	

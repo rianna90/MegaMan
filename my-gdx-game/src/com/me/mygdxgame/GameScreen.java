@@ -132,18 +132,18 @@ public class GameScreen implements Screen,  InputProcessor  {
 		if(leftArrowBtn.getBoundingRectangle().contains(touchpoint.x, touchpoint.y))
 		{
 			mm.state = MegaManState.WalkLeft;
+			mm.left = true;
 			mm.setSpeed(-2);		
-
 		}
 		
 		if(rightArrowBtn.getBoundingRectangle().contains(touchpoint.x, touchpoint.y))
 		{
 			mm.state = MegaManState.WalkRight;
+			mm.left = false;
 			mm.setSpeed(2);			
 		}
 		
-		return true;
-		
+		return true;		
 	}
 
 	@Override
