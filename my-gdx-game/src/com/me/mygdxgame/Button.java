@@ -1,64 +1,28 @@
 package com.me.mygdxgame;
 
-import com.badlogic.gdx.InputProcessor;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.scenes.scene2d.Actor;
 
-public class Button extends Sprite implements InputProcessor {
+public class Button extends Sprite {
 
-	SpriteBatch spritebatch;
+	private Texture _texture;
+	private int _posX;
+	private int _posY;
 
-	public Button()
+	public Button(Texture t, int x, int y)
 	{
-		
+		_texture = t;
+		_posX = x;
+		_posY = y;
 	}
-
-	@Override
-	public boolean keyDown(int keycode) {
-		// TODO Auto-generated method stub
-		return false;
+	
+	public void draw(SpriteBatch spriteBatch)
+	{
+		//spriteBatch.begin();
+		spriteBatch.draw(_texture, _posX, _posY);
+		//spriteBatch.end();
+		//super.draw(spriteBatch);
 	}
-
-	@Override
-	public boolean keyUp(int keycode) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean keyTyped(char character) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean touchDown(int screenX, int screenY, int pointer, int button) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean touchUp(int screenX, int screenY, int pointer, int button) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean touchDragged(int screenX, int screenY, int pointer) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean mouseMoved(int screenX, int screenY) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean scrolled(int amount) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+	
 }

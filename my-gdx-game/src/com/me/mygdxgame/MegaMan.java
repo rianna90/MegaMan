@@ -17,6 +17,17 @@ public class MegaMan extends Actor {
     private int _posY;
     private int _speed;
     
+    public enum MegaManState
+    {
+        Standing,
+    	WalkLeft,
+    	WalkRight,
+        Jumping,
+        Dead
+    }
+    
+    public MegaManState state = MegaManState.Standing;
+    
 	public MegaMan () 
 	{
 		_posX = 100;
@@ -24,6 +35,7 @@ public class MegaMan extends Actor {
 		_speed = 0;
 		
 		_megaMan = new Sprite(Assets.megaman);
+
 	}
 	
     public void setSpeed(int speed) 
@@ -39,12 +51,24 @@ public class MegaMan extends Actor {
 	public void act(float delta)
 	{
 		Boundaries();
+		if(state == MegaManState.Standing)
+		{
+			_speed = 0;
+			_currentFrame = 5;
+		}
+		if(state == MegaManState.WalkLeft)
+		{
+			AnimateLeft();	
+		}
+		if(state == MegaManState.WalkRight)
+		{
+			AnimateRight();	
+		}
 		
         _posX += _speed;
 	}
 	
-	public void Animate()
-	{
+	private void AnimateRight() {
 		_currentAnimationTime += Gdx.graphics.getDeltaTime();//gameTime.ElapsedGameTime.Milliseconds;
 		
         if (_currentAnimationTime >= _animationTime)
@@ -55,6 +79,22 @@ public class MegaMan extends Actor {
             if(_currentFrame == 9)
             {
             	_currentFrame = 5;
+            }
+        }		
+	}
+
+	public void AnimateLeft()
+	{
+		_currentAnimationTime += Gdx.graphics.getDeltaTime();//gameTime.ElapsedGameTime.Milliseconds;
+		
+        if (_currentAnimationTime >= _animationTime)
+        {       	
+            _currentFrame--;
+            _currentAnimationTime = 0;
+            
+            if(_currentFrame == 0)
+            {
+            	_currentFrame = 4;
             }
         }
 	}
@@ -80,7 +120,7 @@ public class MegaMan extends Actor {
     
 	@Override
 	public void draw(SpriteBatch batch, float parentAlpha) {
-		
+
 		batch.draw(getCurrentFrame(), _posX, _posY);
 	}
 }
