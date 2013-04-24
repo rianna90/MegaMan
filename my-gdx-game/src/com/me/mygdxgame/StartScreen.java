@@ -84,7 +84,7 @@ public class StartScreen implements Screen, InputProcessor {
 
 	@Override
 	public void dispose() {
-		spriteBatch.dispose();		
+		//spriteBatch.dispose();		
 	}
 
 	@Override

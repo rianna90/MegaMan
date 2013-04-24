@@ -13,6 +13,7 @@ public class MyGdxGame extends Game {
 		
 		//setScreen(new SplashScreen(this));
 		setScreen(new GameScreen(this));
+		//setScreen(new MenuScreen(this));
 	}
 
 	@Override

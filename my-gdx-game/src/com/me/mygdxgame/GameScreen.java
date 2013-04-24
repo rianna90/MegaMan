@@ -21,11 +21,14 @@ public class GameScreen implements Screen,  InputProcessor  {
 	private MegaMan mm;
 	private Sprite leftArrowBtn;
 	private Sprite rightArrowBtn;
+	private Sprite pauseBtn;
     private Vector3 touchpoint;
-    private Coins coins;
+    //private Coins coins;
     private String coinText;
     private int amountOfCoins;
     private Pedometer pd;
+
+    
     
 	public GameScreen(Game g) {		
 		
@@ -64,6 +67,11 @@ public class GameScreen implements Screen,  InputProcessor  {
         rightArrowBtn.setPosition(100, 10);
         rightArrowBtn.setScale(1.5f);
         rightArrowBtn.draw(spriteBatch);
+        
+        pauseBtn = new Sprite(Assets.pauseBtn);
+        pauseBtn.setPosition(290, 400);
+        pauseBtn.draw(spriteBatch);
+ 
         
 	    spriteBatch.end();	  
 	    
@@ -114,7 +122,7 @@ public class GameScreen implements Screen,  InputProcessor  {
 
 	@Override
 	public void dispose() {
-		spriteBatch.dispose();
+		//spriteBatch.dispose();
 	}
 
 	@Override
@@ -152,6 +160,12 @@ public class GameScreen implements Screen,  InputProcessor  {
 			mm.state = MegaManState.WalkRight;
 			mm.left = false;
 			mm.setSpeed(2);			
+		}
+		
+		
+		if(pauseBtn.getBoundingRectangle().contains(touchpoint.x, touchpoint.y))
+		{
+			myGame.setScreen(new MenuScreen(myGame));
 		}
 		
 		return true;		

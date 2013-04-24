@@ -1,23 +1,24 @@
 package com.me.mygdxgame;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
+
 
 public class Assets{
 	
 	public static Texture splash;
 	public static Texture bg;
 	public static Texture playBtn;
+	public static Texture pauseBtn;
+	public static Texture resumeBtn;
+	public static Texture mainBtn;
+	
 	public static Texture background;
 	public static Texture megaman;	
 	public static Texture megamanJump;
 	public static Texture platformBase;
-	public static Texture platformMiddle;
-	
+	public static Texture platformMiddle;	
 	public static Texture btn;
 
 	public static Texture menubg;
@@ -36,6 +37,9 @@ public class Assets{
 			
 		bg = loadTexture("bg.jpg");	
 		playBtn = loadTexture("playButton.png");
+		pauseBtn = loadTexture("pauseButton.png");
+		resumeBtn = loadTexture("resumeButton.png");
+		mainBtn = loadTexture("mainButton.png");
 		
 		megaman = loadTexture("megaman.png");	
 		megamanJump = loadTexture("manjump.png");
