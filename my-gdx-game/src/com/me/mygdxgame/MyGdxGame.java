@@ -11,9 +11,14 @@ public class MyGdxGame extends Game {
 
 		Assets.load();
 		
+<<<<<<< HEAD
 		//setScreen(new SplashScreen(this));
 		setScreen(new GameScreen(this));
 		//setScreen(new MenuScreen(this));
+=======
+		setScreen(new SplashScreen(this));
+		//setScreen(new GameScreen(this));
+>>>>>>> Steps count start screen
 	}
 
 	@Override
