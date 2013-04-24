@@ -24,6 +24,7 @@ public class Assets{
 	public static Texture homebg;
 	public static Texture charfullbody;
 	public static BitmapFont font;
+	public static Texture coin;
 	
 	public static Texture loadTexture (String file){
 		return new Texture(Gdx.files.internal(file));
@@ -45,6 +46,7 @@ public class Assets{
 		menubg = loadTexture("menubg.png");
 		homebg = loadTexture("homebg.png");
 		charfullbody = loadTexture("charfullbody.png");
+		coin = loadTexture("coin.png");
 
 		font = new BitmapFont(Gdx.files.internal("font.fnt"), Gdx.files.internal("font.png"), false);
 		
