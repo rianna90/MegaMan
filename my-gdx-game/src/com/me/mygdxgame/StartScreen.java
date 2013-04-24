@@ -1,7 +1,5 @@
 package com.me.mygdxgame;
 
-import java.awt.Font;
-
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
@@ -18,11 +16,13 @@ public class StartScreen implements Screen, InputProcessor {
 	private OrthographicCamera camera;
     private Game myGame;
     private Sprite playBtn;
-    private String homeText;
-    public static Font font;    
+    private String homeText;   
+    private String stepsText;
+    
     public int number;
     public Vector3 touchpoint;
     
+    private Pedometer pd;
     
 	public StartScreen(Game g)
 	{
@@ -33,7 +33,10 @@ public class StartScreen implements Screen, InputProcessor {
 	@Override
 	public void render(float delta) {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-	    camera.update();		
+	    camera.update();	
+	    
+	    stepsText = "Steps:  " + Steps.getInstance().steps;
+	    
 	    spriteBatch.setProjectionMatrix(camera.combined);
 	   
         spriteBatch.begin();
@@ -49,7 +52,10 @@ public class StartScreen implements Screen, InputProcessor {
         spriteBatch.draw(Assets.platformBase,  0, 0, 800, 28, 0, 0, 800, 28, false, false);
         spriteBatch.setColor(1.0f, 1.0f, 1.0f, 1.0f);
         Assets.font.draw(spriteBatch, homeText, 16, 480 - 20);
+        Assets.font.draw(spriteBatch, stepsText, 550, 480 - 20);
         spriteBatch.end();
+        
+        pd.render();
 	}
 	
 
@@ -60,11 +66,12 @@ public class StartScreen implements Screen, InputProcessor {
 
 	@Override
 	public void show() {
-		 number = 10;
-		 homeText = "Experience Points " + number;
-		 spriteBatch = new SpriteBatch();
-		 camera = new OrthographicCamera();
-		 camera.setToOrtho(false, 800, 600);	
+		pd = new Pedometer();
+		number = 10;
+		homeText = "Experience Points " + number;
+		spriteBatch = new SpriteBatch();
+		camera = new OrthographicCamera();
+		camera.setToOrtho(false, 800, 600);	
 	}
 
 	@Override
@@ -108,7 +115,7 @@ public class StartScreen implements Screen, InputProcessor {
 
 		touchpoint = new Vector3(screenX, screenY, 0);
 		camera.unproject(touchpoint);
-		
+	
 		if(playBtn.getBoundingRectangle().contains(touchpoint.x, touchpoint.y))
 		{
 			myGame.setScreen(new GameScreen(myGame));
