@@ -44,10 +44,14 @@ public class StartScreen implements Screen, InputProcessor {
         spriteBatch.draw(Assets.homebg, 80, 60);
         spriteBatch.draw(Assets.charfullbody, 310, 170);
         
-        
         playBtn = new Sprite(Assets.playBtn);
-        playBtn.setPosition(290, 100);
-        playBtn.draw(spriteBatch);
+	    playBtn.setPosition(290, 100);
+	    playBtn.draw(spriteBatch);
+	    
+        if(Steps.getInstance().steps > 5)
+        {       
+	        
+        }
         
         spriteBatch.draw(Assets.platformBase,  0, 0, 800, 28, 0, 0, 800, 28, false, false);
         spriteBatch.setColor(1.0f, 1.0f, 1.0f, 1.0f);
