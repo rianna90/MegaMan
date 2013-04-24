@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.me.mygdxgame.MegaMan.MegaManState;
 
 public class GameScreen implements Screen,  InputProcessor  {
 
@@ -32,7 +33,6 @@ public class GameScreen implements Screen,  InputProcessor  {
 	
 	@Override
 	public void render(float delta) {
-				
 	    camera.update();		
 	    spriteBatch.setProjectionMatrix(camera.combined);
 		
@@ -43,23 +43,24 @@ public class GameScreen implements Screen,  InputProcessor  {
 	    spriteBatch.begin();		    
 	    spriteBatch.draw(Assets.bg, 0, 0);	   
 	    platform.draw(spriteBatch, delta);
-	    
+		
 	    mm.draw(spriteBatch, delta);
 	    mm.act(delta); 
 	    
         leftArrowBtn = new Sprite(Assets.btn);
         leftArrowBtn.setPosition(10, 10);
+        leftArrowBtn.setScale(1.5f);
         leftArrowBtn.draw(spriteBatch);
 	    
         rightArrowBtn = new Sprite(Assets.btn);
         rightArrowBtn.rotate(180);
         rightArrowBtn.setPosition(100, 10);
+        rightArrowBtn.setScale(1.5f);
         rightArrowBtn.draw(spriteBatch);
         
 	    spriteBatch.end();	  
 	    
-	    pd.render();
-	    	    
+	    pd.render();	    	    
 	}
 	
 	@Override
@@ -127,17 +128,18 @@ public class GameScreen implements Screen,  InputProcessor  {
 	public boolean touchDown(int screenX, int screenY, int pointer, int button) {
 		touchpoint = new Vector3(screenX, screenY, 0);
 		camera.unproject(touchpoint);
-		
+	    
 		if(leftArrowBtn.getBoundingRectangle().contains(touchpoint.x, touchpoint.y))
 		{
-			//mm.Animate();
-			mm.setSpeed(-1);			
+			mm.state = MegaManState.WalkLeft;
+			mm.setSpeed(-2);		
+
 		}
 		
 		if(rightArrowBtn.getBoundingRectangle().contains(touchpoint.x, touchpoint.y))
 		{
-			//mm.Animate();
-			mm.setSpeed(1);			
+			mm.state = MegaManState.WalkRight;
+			mm.setSpeed(2);			
 		}
 		
 		return true;
@@ -147,7 +149,8 @@ public class GameScreen implements Screen,  InputProcessor  {
 	@Override
 	public boolean touchUp(int screenX, int screenY, int pointer, int button) {
 	
-		mm.setSpeed(0);
+		mm.state = MegaManState.Standing;
+		
 		return false;
 	}
 
