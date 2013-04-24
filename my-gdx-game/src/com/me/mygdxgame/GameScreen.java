@@ -21,9 +21,14 @@ public class GameScreen implements Screen,  InputProcessor  {
 	private MegaMan mm;
 	private Sprite leftArrowBtn;
 	private Sprite rightArrowBtn;
+	private Sprite pauseBtn;
     private Vector3 touchpoint;
-    
+    //private Coins coins;
+    private String coinText;
+    private int amountOfCoins;
     private Pedometer pd;
+
+    
     
 	public GameScreen(Game g) {		
 		
@@ -39,10 +44,15 @@ public class GameScreen implements Screen,  InputProcessor  {
 	    spriteBatch.begin();	
 	    stage.draw();
 	    spriteBatch.end();	
+	    
+	    amountOfCoins = 0;
 	    	    
 	    spriteBatch.begin();		    
 	    spriteBatch.draw(Assets.bg, 0, 0);	   
 	    platform.draw(spriteBatch, delta);
+
+	    
+	    Assets.font.draw(spriteBatch, coinText, 16, 480 - 20);
 		
 	    mm.draw(spriteBatch, delta);
 	    mm.act(delta); 
@@ -58,9 +68,15 @@ public class GameScreen implements Screen,  InputProcessor  {
         rightArrowBtn.setScale(1.5f);
         rightArrowBtn.draw(spriteBatch);
         
+        pauseBtn = new Sprite(Assets.pauseBtn);
+        pauseBtn.setPosition(290, 400);
+        pauseBtn.draw(spriteBatch);
+ 
+        
 	    spriteBatch.end();	  
 	    
-	    pd.render();	    	    
+	    pd.render();	 
+
 	}
 	
 	@Override
@@ -71,6 +87,8 @@ public class GameScreen implements Screen,  InputProcessor  {
 	@Override
 	public void show() {
 		
+		coinText = "Coins: " + amountOfCoins;
+		
 		stage = new Stage(Gdx.graphics.getWidth(),Gdx.graphics.getHeight(), true);
 		
 		mm = new MegaMan();		
@@ -78,6 +96,7 @@ public class GameScreen implements Screen,  InputProcessor  {
 		
 		platform = new Platform();	
 		spriteBatch = new SpriteBatch();
+		
 		
 		camera = new OrthographicCamera();
 	    camera.setToOrtho(false, 800, 480);		
@@ -103,7 +122,7 @@ public class GameScreen implements Screen,  InputProcessor  {
 
 	@Override
 	public void dispose() {
-		spriteBatch.dispose();
+		//spriteBatch.dispose();
 	}
 
 	@Override
@@ -143,6 +162,12 @@ public class GameScreen implements Screen,  InputProcessor  {
 			mm.setSpeed(2);			
 		}
 		
+		
+		if(pauseBtn.getBoundingRectangle().contains(touchpoint.x, touchpoint.y))
+		{
+			myGame.setScreen(new MenuScreen(myGame));
+		}
+		
 		return true;		
 	}
 
@@ -171,5 +196,6 @@ public class GameScreen implements Screen,  InputProcessor  {
 
 		return false;
 	}
+	
 
 }
