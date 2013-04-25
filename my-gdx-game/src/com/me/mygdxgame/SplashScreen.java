@@ -26,7 +26,7 @@ public class SplashScreen implements Screen {
 	    spriteBatch.setProjectionMatrix(camera.combined);
 	    
         spriteBatch.begin();
-        spriteBatch.draw(Assets.splash, 0, 0);
+        spriteBatch.draw(Assets.playBtn, 0, 0);
         spriteBatch.end();
 
         time += delta;
