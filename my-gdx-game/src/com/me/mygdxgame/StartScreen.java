@@ -19,8 +19,9 @@ public class StartScreen implements Screen, InputProcessor {
     private String homeText;   
     private String stepsText;
     
-    public int number;
-    public Vector3 touchpoint;
+    private int number;
+    private boolean start = false;
+    private Vector3 touchpoint;
     
     private Pedometer pd;
     
@@ -35,7 +36,7 @@ public class StartScreen implements Screen, InputProcessor {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 	    camera.update();	
 	    
-	    stepsText = "Steps:  " + Steps.getInstance().steps;
+	    stepsText = "Steps:  " + Steps.getInstance().steps + "  / 15";
 	    
 	    spriteBatch.setProjectionMatrix(camera.combined);
 	   
@@ -43,20 +44,22 @@ public class StartScreen implements Screen, InputProcessor {
         spriteBatch.draw(Assets.bg, 0, 0);
         spriteBatch.draw(Assets.homebg, 80, 60);
         spriteBatch.draw(Assets.charfullbody, 310, 170);
-        
-        playBtn = new Sprite(Assets.playBtn);
+        	       
+	    playBtn = new Sprite(Assets.playBtn);
 	    playBtn.setPosition(290, 100);
 	    playBtn.draw(spriteBatch);
 	    
-        if(Steps.getInstance().steps > 5)
+	    
+        if(Steps.getInstance().steps >= 15)
         {       
-	        
+        	Gdx.app.log("StartScreen", Integer.toString(Steps.getInstance().steps) );
+	         start = true;
         }
         
         spriteBatch.draw(Assets.platformBase,  0, 0, 800, 28, 0, 0, 800, 28, false, false);
         spriteBatch.setColor(1.0f, 1.0f, 1.0f, 1.0f);
-        Assets.font.draw(spriteBatch, homeText, 16, 480 - 20);
-        Assets.font.draw(spriteBatch, stepsText, 550, 480 - 20);
+        //Assets.font.draw(spriteBatch, homeText, 16, 480 - 20);
+        Assets.font.draw(spriteBatch, stepsText, 480, 480);
         spriteBatch.end();
         
         pd.render();
@@ -116,15 +119,23 @@ public class StartScreen implements Screen, InputProcessor {
 	// Start btn
 	@Override
 	public boolean touchDown(int screenX, int screenY, int pointer, int button) {
-
+	
 		touchpoint = new Vector3(screenX, screenY, 0);
 		camera.unproject(touchpoint);
-	
-		if(playBtn.getBoundingRectangle().contains(touchpoint.x, touchpoint.y))
+		
+		if(start == true)
 		{
-			myGame.setScreen(new GameScreen(myGame));
+
+			if(playBtn.getBoundingRectangle().contains(touchpoint.x, touchpoint.y))
+			{
+				myGame.setScreen(new GameScreen(myGame));
+			}
+			
+			return true;
 		}
-		return true;
+		
+		return false;
+				
 	}
 
 	@Override
