@@ -35,7 +35,7 @@ public class Assets{
 		
 		splash = loadTexture("libgdx.png");
 			
-		bg = loadTexture("bg.jpg");	
+		bg = loadTexture("bg.png");	
 		playBtn = loadTexture("playButton.png");
 		pauseBtn = loadTexture("pauseButton.png");
 		resumeBtn = loadTexture("resumeButton.png");
@@ -43,8 +43,8 @@ public class Assets{
 		
 		megaman = loadTexture("megaman.png");	
 		megamanJump = loadTexture("manjump.png");
-		background = loadTexture("background.jpg");	
-		background = loadTexture("background.jpg");
+		background = loadTexture("background.png");	
+		//background = loadTexture("background.jpg");
 		platformBase = loadTexture("bottomGround.png");
 		platformMiddle = loadTexture("floatGroundMiddle.png");
 		menubg = loadTexture("menubg.png");

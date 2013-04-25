@@ -1,0 +1,17 @@
+I18N.West.dll
+I18N.dll
+IKVM.OpenJDK.Core.dll
+IKVM.OpenJDK.Text.dll
+IKVM.OpenJDK.Util.dll
+IKVM.Runtime.JNI.dll
+IKVM.Runtime.dll
+Mono.Security.dll
+OpenTK-1.0.dll
+System.Core.dll
+System.Xml.dll
+System.dll
+gdx-backend-ios.dll
+gdx.dll
+libObjectAL.dll
+mscorlib.dll
+my-gdx-game.dll
