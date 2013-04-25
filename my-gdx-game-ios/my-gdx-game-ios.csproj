@@ -165,41 +165,85 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Folder Include="data\" />
-    <Folder Include="assets\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="assets\libgdx.png" />
-<<<<<<< HEAD
-    <Content Include="data\libgdx.png" />
-=======
-    <Content Include="assets\bg.jpg" />
-    <Content Include="assets\charfullbody.png" />
-    <Content Include="assets\homebg.png" />
-    <Content Include="assets\menubg.png" />
-    <Content Include="assets\playButton.png" />
-    <Content Include="assets\bottomGround.png" />
-    <Content Include="assets\floatGroundLeft.png" />
-    <Content Include="assets\floatGroundMiddle.png" />
-    <Content Include="assets\floatGroundRight.png" />
-    <Content Include="assets\font.fnt" />
-    <Content Include="assets\font.png" />
-    <Content Include="assets\megaman.png" />
-    <Content Include="data\libgdx.png" />
+    <Content Include="libs\libgdx.png" />
+    <Content Include="libgdx.png" />
     <Content Include="data\bg.jpg" />
     <Content Include="data\bottomGround.png" />
+    <Content Include="data\btn.png" />
     <Content Include="data\charfullbody.png" />
+    <Content Include="data\coin.png" />
+    <Content Include="data\exitButton.png" />
     <Content Include="data\floatGroundLeft.png" />
     <Content Include="data\floatGroundMiddle.png" />
     <Content Include="data\floatGroundRight.png" />
     <Content Include="data\font.fnt" />
     <Content Include="data\font.png" />
     <Content Include="data\homebg.png" />
+    <Content Include="data\libgdx.png" />
+    <Content Include="data\mainButton.png" />
+    <Content Include="data\manjump.png" />
     <Content Include="data\megaman.png" />
     <Content Include="data\menubg.png" />
+    <Content Include="data\optionsButton.png" />
+    <Content Include="data\pauseButton.png" />
     <Content Include="data\playButton.png" />
->>>>>>> Rianne
-    <Content Include="libs\libgdx.png" />
-    <Content Include="libgdx.png" />
+    <Content Include="data\rain.mp3" />
+    <Content Include="data\resumeButton.png" />
+    <Content Include="data\spritesheet.png" />
+    <Content Include="assets\bg.jpg" />
+    <Content Include="assets\bottomGround.png" />
+    <Content Include="assets\btn.png" />
+    <Content Include="assets\charfullbody.png" />
+    <Content Include="assets\coin.png" />
+    <Content Include="assets\exitButton.png" />
+    <Content Include="assets\floatGroundLeft.png" />
+    <Content Include="assets\floatGroundMiddle.png" />
+    <Content Include="assets\floatGroundRight.png" />
+    <Content Include="assets\font.fnt" />
+    <Content Include="assets\font.png" />
+    <Content Include="assets\homebg.png" />
+    <Content Include="assets\libgdx.png" />
+    <Content Include="assets\mainButton.png" />
+    <Content Include="assets\manjump.png" />
+    <Content Include="assets\megaman.png" />
+    <Content Include="assets\menubg.png" />
+    <Content Include="assets\optionsButton.png" />
+    <Content Include="assets\pauseButton.png" />
+    <Content Include="assets\playButton.png" />
+    <Content Include="assets\rain.mp3" />
+    <Content Include="assets\resumeButton.png" />
+    <Content Include="assets\spritesheet.png" />
+    <Content Include="assets\data\libgdx.png" />
+    <Content Include="assets\data\bg.jpg" />
+    <Content Include="assets\data\bottomGround.png" />
+    <Content Include="assets\data\btn.png" />
+    <Content Include="assets\data\charfullbody.png" />
+    <Content Include="assets\data\coin.png" />
+    <Content Include="assets\data\exitButton.png" />
+    <Content Include="assets\data\floatGroundLeft.png" />
+    <Content Include="assets\data\floatGroundMiddle.png" />
+    <Content Include="assets\data\floatGroundRight.png" />
+    <Content Include="assets\data\font.fnt" />
+    <Content Include="assets\data\font.png" />
+    <Content Include="assets\data\homebg.png" />
+    <Content Include="assets\data\mainButton.png" />
+    <Content Include="assets\data\manjump.png" />
+    <Content Include="assets\data\megaman.png" />
+    <Content Include="assets\data\menubg.png" />
+    <Content Include="assets\data\optionsButton.png" />
+    <Content Include="assets\data\pauseButton.png" />
+    <Content Include="assets\data\playButton.png" />
+    <Content Include="assets\data\rain.mp3" />
+    <Content Include="assets\data\resumeButton.png" />
+    <Content Include="assets\data\spritesheet.png" />
+    <Content Include="assets\data\bg.png" />
+    <Content Include="assets\bg.png" />
+    <Content Include="data\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="New Folder\" />
   </ItemGroup>
 </Project>
