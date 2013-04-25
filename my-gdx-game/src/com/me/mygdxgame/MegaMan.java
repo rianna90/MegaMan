@@ -10,21 +10,28 @@ public class MegaMan extends Actor {
 	
 	private Sprite _megaMan;
     private int _currentFrame = 5;
-    private int _frameWidth = 36;
+    private int _frameWidth = 34;
     private float _animationTime = 0.1f;
     private float _currentAnimationTime = 0;
-    private int _posX;
-    private int _posY;
+
     private int _speed;
+    private int _jumpSpeed;
     public boolean left = false;
+    
+    private float _posX, _posY;     		 // Position of the character
+    private float _velocityX = 4.0f;
+    private float _velocityY = 0;    				// Velocity of the character
+    private float _gravity = 0.5f;           // How strong is gravity
+    private boolean onGround = false;
+
     
     public enum MegaManState
     {
         Standing,
     	WalkLeft,
     	WalkRight,
-        JumpLeft,
-        JumpRight,
+        JumpUp,
+        JumpDown,
         Dead
     }
     
@@ -51,6 +58,18 @@ public class MegaMan extends Actor {
 	
 	public void act(float delta)
 	{
+		   _velocityY += _gravity;
+		    _posY += _velocityY;
+		    //_posX += _velocityX;
+
+		    if(_posY > 28.0)
+		    {
+		        _posY = 28.0f;
+		        _velocityY = 0.0f;
+		        onGround = true;
+		        Gdx.app.log("MegaMan", "posy true");
+		    }
+		    
 		Boundaries();
 		if(state == MegaManState.Standing)
 		{
@@ -66,14 +85,38 @@ public class MegaMan extends Actor {
 		}
 		if(state == MegaManState.WalkLeft)
 		{
+			 _posX += _speed;
 			AnimateLeft();	
 		}
 		if(state == MegaManState.WalkRight)
 		{
+			 _posX += _speed;
 			AnimateRight();	
 		}
-		
-        _posX += _speed;
+		if(state == MegaManState.JumpUp)
+		{
+			StartJump();
+		}
+		if(state == MegaManState.JumpDown)
+		{
+			EndJump();
+		}
+
+	}
+	
+	public void StartJump()
+	{
+	    if(onGround)
+	    {
+	        _velocityY = -12.0f;
+	        //onGround = false;
+	    }
+	}
+
+	public void EndJump()
+	{
+	    if(_velocityY < -6.0f)
+	        _velocityY = -6.0f;
 	}
 	
 	private void AnimateRight() {

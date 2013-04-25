@@ -33,18 +33,15 @@ public class Assets{
 		
 	public static void load(){
 		
-		splash = loadTexture("libgdx.png");
+		splash = loadTexture("splashScreen.png");
 			
 		bg = loadTexture("bg.png");	
 		playBtn = loadTexture("playButton.png");
 		pauseBtn = loadTexture("pauseButton.png");
 		resumeBtn = loadTexture("resumeButton.png");
-		mainBtn = loadTexture("mainButton.png");
-		
+		mainBtn = loadTexture("mainButton.png");		
 		megaman = loadTexture("megaman.png");	
 		megamanJump = loadTexture("manjump.png");
-		background = loadTexture("background.png");	
-		//background = loadTexture("background.jpg");
 		platformBase = loadTexture("bottomGround.png");
 		platformMiddle = loadTexture("floatGroundMiddle.png");
 		menubg = loadTexture("menubg.png");
