@@ -33,6 +33,7 @@ public class Assets{
 		
 	public static void load(){
 		
+
 		splash = loadTexture("splashScreen.jpg");
 			
 		bg = loadTexture("bg.jpg");	
@@ -41,7 +42,7 @@ public class Assets{
 		resumeBtn = loadTexture("resumeButton.jpg");
 		mainBtn = loadTexture("mainButton.jpg");	
 		
-		
+
 		megaman = loadTexture("megaman.jpg");	
 		megamanJump = loadTexture("manjump.jpg");
 		

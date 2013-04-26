@@ -33,17 +33,16 @@ public class MenuScreen implements Screen, InputProcessor {
 	   
         spriteBatch.begin();
         spriteBatch.draw(Assets.bg, 0, 0);
-        spriteBatch.draw(Assets.menubg, 290, 200);
+        spriteBatch.draw(Assets.menubg, 250, 200);
         
         
         resumeBtn = new Sprite(Assets.resumeBtn);
-        resumeBtn.setPosition(340, 230);
+        resumeBtn.setPosition(295, 300);
         resumeBtn.draw(spriteBatch);
         
         mainBtn = new Sprite(Assets.mainBtn);
-        mainBtn.setPosition(340, 290);
+        mainBtn.setPosition(295, 400);
         mainBtn.draw(spriteBatch);
-
 
         spriteBatch.draw(Assets.platformBase,  0, 0, 800, 28, 0, 0, 800, 28, false, false);
 
@@ -98,7 +97,7 @@ public class MenuScreen implements Screen, InputProcessor {
 
 	@Override
 	public void dispose() {
-		//spriteBatch.dispose();		
+		spriteBatch.dispose();		
 	}
 
 	@Override
