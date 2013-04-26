@@ -37,11 +37,11 @@ public class Assets{
 		splash = loadTexture("splashScreen.jpg");
 			
 		bg = loadTexture("bg.jpg");	
-		playBtn = loadTexture("playButton.jpg");
+		
 		pauseBtn = loadTexture("pauseButton.jpg");
 		resumeBtn = loadTexture("resumeButton.jpg");
 		mainBtn = loadTexture("mainButton.jpg");	
-		
+		playBtn = loadTexture("playButton.jpg");
 
 		megaman = loadTexture("megaman.jpg");	
 		megamanJump = loadTexture("manjump.jpg");

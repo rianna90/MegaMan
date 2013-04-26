@@ -58,19 +58,19 @@
 		</data>
 		<key>Mono.Security.dll</key>
 		<data>
-		WM+tqn3JdfszEg0CXUARHalO8FE=
+		sVXPIHPKkwLYzSoqykTyWf2cSj8=
 		</data>
 		<key>Mono.Security.dll.mdb</key>
 		<data>
-		WFDZ/qe2xJuKeVk2235/n4rkYTU=
+		s+XrJ0uy8V474du83aeU4v78EYs=
 		</data>
 		<key>MonoTouchDebugConfiguration.txt</key>
 		<data>
-		huQmG4J3eipwnNkFkIvtt5mD2dU=
+		Yw7OBEWU5wd1N9hu6sot78V9Iaw=
 		</data>
 		<key>OpenTK-1.0.dll</key>
 		<data>
-		cTMtmpkuIuxgV/fYBJ060okZGJs=
+		AiwzImiqKt+UITdHBtqy4CojGUY=
 		</data>
 		<key>OpenTK-1.0.dll.config</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>OpenTK-1.0.dll.mdb</key>
 		<data>
-		L8BUk+MhkecwaVJz35k6XvdObmM=
+		Q/HQ8bdzdbw/cAdGA2MHdKmCcqc=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -90,271 +90,63 @@
 		</data>
 		<key>System.Core.dll</key>
 		<data>
-		+cewshUsPFGUb0KAt9Kmi5UPPgs=
+		RestBAzZnB2QDfgwcgJEsSZp4VA=
 		</data>
 		<key>System.Core.dll.mdb</key>
 		<data>
-		9FZVjcCOGNku78jCb/auL0arpT4=
+		WeOSxrkRRlBzP0nh4ASGfQQWrr4=
 		</data>
 		<key>System.Xml.dll</key>
 		<data>
-		5ATq4zE976u/c8G8O+rrGkUZmM4=
+		0wn8ZKlqQRWuW8kND18Gi2kP+Ts=
 		</data>
 		<key>System.Xml.dll.mdb</key>
 		<data>
-		LLp8UifZT2Exr5hcU/MlatgGXk8=
+		15odcC9HjkL2y6OLAeHhJmZoWgM=
 		</data>
 		<key>System.dll</key>
 		<data>
-		om6AuaUdjakq2DyrA3xedg0RCK8=
+		UiNviFLmlT0CCLpH03L+wjcCojY=
 		</data>
 		<key>System.dll.mdb</key>
 		<data>
-		eAqk78Jam4Vs23UwPdS3bu4iwGc=
+		tFXJt7Eb/RpZDVP0ngho0HrTdX0=
 		</data>
-		<key>assets/bg.jpg</key>
+		<key>bg.jpg</key>
 		<data>
 		hbeqsdVMmPkXnWnbFYoHLzle8PQ=
 		</data>
-		<key>assets/bottomGround.jpg</key>
+		<key>bottomGround.jpg</key>
 		<data>
 		qAbRklVuuZyYuDTFL/6BptwKh1U=
 		</data>
-		<key>assets/btn.jpg</key>
+		<key>btn.jpg</key>
 		<data>
 		ggJaZce3VIAbCHdrVlZOBB8lt4c=
 		</data>
-		<key>assets/charfullbody.jpg</key>
+		<key>charfullbody.jpg</key>
 		<data>
 		PEvrstuG70owmguFcZFkQx3gMKg=
 		</data>
-		<key>assets/coin.jpg</key>
+		<key>coin.jpg</key>
 		<data>
 		fpCnsyN166Llx+k+MvuxQ0wxGko=
-		</data>
-		<key>assets/data/bg.jpg</key>
-		<data>
-		hbeqsdVMmPkXnWnbFYoHLzle8PQ=
-		</data>
-		<key>assets/data/bottomGround.jpg</key>
-		<data>
-		qAbRklVuuZyYuDTFL/6BptwKh1U=
-		</data>
-		<key>assets/data/btn.jpg</key>
-		<data>
-		ggJaZce3VIAbCHdrVlZOBB8lt4c=
-		</data>
-		<key>assets/data/charfullbody.jpg</key>
-		<data>
-		PEvrstuG70owmguFcZFkQx3gMKg=
-		</data>
-		<key>assets/data/coin.jpg</key>
-		<data>
-		fpCnsyN166Llx+k+MvuxQ0wxGko=
-		</data>
-		<key>assets/data/exitButton.jpg</key>
-		<data>
-		RjDiYjQFfrQY8ZXVbwZftnWt7UE=
-		</data>
-		<key>assets/data/floatGroundLeft.jpg</key>
-		<data>
-		eB7zLlDNQMxC0NG9aIUnKr4ZtLE=
-		</data>
-		<key>assets/data/floatGroundMiddle.jpg</key>
-		<data>
-		GBinU6cxxDqbJUE/F81u4V4BMbo=
-		</data>
-		<key>assets/data/floatGroundRight.jpg</key>
-		<data>
-		qCJUCiXizJFp4207aedJsq8O6q4=
-		</data>
-		<key>assets/data/font.jpg</key>
-		<data>
-		QJXRFu1W1etazLxGTsyL6rSDU3w=
-		</data>
-		<key>assets/data/homebg.jpg</key>
-		<data>
-		4snKndugV8tHsRuZRql3IAfhBVo=
-		</data>
-		<key>assets/data/mainButton.jpg</key>
-		<data>
-		k1lWA4v+n+R+rXpXqGrPyoXKKFY=
-		</data>
-		<key>assets/data/manjump.jpg</key>
-		<data>
-		nkNKZEm06Z0vfl2e0mH9gPXVEXQ=
-		</data>
-		<key>assets/data/megaman.jpg</key>
-		<data>
-		ZJ5+BtygQ5qWhDEERnDOS0s9gCo=
-		</data>
-		<key>assets/data/menubg.jpg</key>
-		<data>
-		Hi4Wr9PM0UbGyLOrRA2LnrFoqNU=
-		</data>
-		<key>assets/data/pauseButton.jpg</key>
-		<data>
-		0g+xrZwENf1AwA7r8DF8Rlnwj6c=
-		</data>
-		<key>assets/data/playButton.jpg</key>
-		<data>
-		5P9Mxhj86pzZytPWzAXz7C76d4Y=
-		</data>
-		<key>assets/data/resumeButton.jpg</key>
-		<data>
-		4lPTJU77GYX97GyyNMCRTG4Wt0M=
-		</data>
-		<key>assets/data/splashScreen.jpg</key>
-		<data>
-		FU3SF6jt/mqD/IXFpW9p/LeTEfE=
-		</data>
-		<key>assets/exitButton.jpg</key>
-		<data>
-		RjDiYjQFfrQY8ZXVbwZftnWt7UE=
-		</data>
-		<key>assets/floatGroundLeft.jpg</key>
-		<data>
-		eB7zLlDNQMxC0NG9aIUnKr4ZtLE=
-		</data>
-		<key>assets/floatGroundMiddle.jpg</key>
-		<data>
-		GBinU6cxxDqbJUE/F81u4V4BMbo=
-		</data>
-		<key>assets/floatGroundRight.jpg</key>
-		<data>
-		qCJUCiXizJFp4207aedJsq8O6q4=
-		</data>
-		<key>assets/font.jpg</key>
-		<data>
-		QJXRFu1W1etazLxGTsyL6rSDU3w=
-		</data>
-		<key>assets/homebg.jpg</key>
-		<data>
-		4snKndugV8tHsRuZRql3IAfhBVo=
-		</data>
-		<key>assets/mainButton.jpg</key>
-		<data>
-		k1lWA4v+n+R+rXpXqGrPyoXKKFY=
-		</data>
-		<key>assets/manjump.jpg</key>
-		<data>
-		nkNKZEm06Z0vfl2e0mH9gPXVEXQ=
-		</data>
-		<key>assets/megaman.jpg</key>
-		<data>
-		ZJ5+BtygQ5qWhDEERnDOS0s9gCo=
-		</data>
-		<key>assets/menubg.jpg</key>
-		<data>
-		Hi4Wr9PM0UbGyLOrRA2LnrFoqNU=
-		</data>
-		<key>assets/pauseButton.jpg</key>
-		<data>
-		0g+xrZwENf1AwA7r8DF8Rlnwj6c=
-		</data>
-		<key>assets/playButton.jpg</key>
-		<data>
-		5P9Mxhj86pzZytPWzAXz7C76d4Y=
-		</data>
-		<key>assets/resumeButton.jpg</key>
-		<data>
-		4lPTJU77GYX97GyyNMCRTG4Wt0M=
-		</data>
-		<key>assets/splashScreen.jpg</key>
-		<data>
-		FU3SF6jt/mqD/IXFpW9p/LeTEfE=
-		</data>
-		<key>data/background.jpg</key>
-		<data>
-		n953kyc1qE8YAvuqFljSJgdh51s=
-		</data>
-		<key>data/bg.jpg</key>
-		<data>
-		hbeqsdVMmPkXnWnbFYoHLzle8PQ=
-		</data>
-		<key>data/bottomGround.jpg</key>
-		<data>
-		qAbRklVuuZyYuDTFL/6BptwKh1U=
-		</data>
-		<key>data/btn.jpg</key>
-		<data>
-		ggJaZce3VIAbCHdrVlZOBB8lt4c=
-		</data>
-		<key>data/charfullbody.jpg</key>
-		<data>
-		PEvrstuG70owmguFcZFkQx3gMKg=
-		</data>
-		<key>data/coin.jpg</key>
-		<data>
-		fpCnsyN166Llx+k+MvuxQ0wxGko=
-		</data>
-		<key>data/exitButton.jpg</key>
-		<data>
-		RjDiYjQFfrQY8ZXVbwZftnWt7UE=
-		</data>
-		<key>data/floatGroundLeft.jpg</key>
-		<data>
-		eB7zLlDNQMxC0NG9aIUnKr4ZtLE=
-		</data>
-		<key>data/floatGroundMiddle.jpg</key>
-		<data>
-		GBinU6cxxDqbJUE/F81u4V4BMbo=
-		</data>
-		<key>data/floatGroundRight.jpg</key>
-		<data>
-		qCJUCiXizJFp4207aedJsq8O6q4=
-		</data>
-		<key>data/font.fnt</key>
-		<data>
-		DH+2WKZQ8NDdXiXYyOhqF+qQ9Dg=
-		</data>
-		<key>data/font.jpg</key>
-		<data>
-		QJXRFu1W1etazLxGTsyL6rSDU3w=
-		</data>
-		<key>data/homebg.jpg</key>
-		<data>
-		4snKndugV8tHsRuZRql3IAfhBVo=
-		</data>
-		<key>data/mainButton.jpg</key>
-		<data>
-		k1lWA4v+n+R+rXpXqGrPyoXKKFY=
-		</data>
-		<key>data/manjump.jpg</key>
-		<data>
-		nkNKZEm06Z0vfl2e0mH9gPXVEXQ=
-		</data>
-		<key>data/megaman.jpg</key>
-		<data>
-		ZJ5+BtygQ5qWhDEERnDOS0s9gCo=
-		</data>
-		<key>data/menubg.jpg</key>
-		<data>
-		Hi4Wr9PM0UbGyLOrRA2LnrFoqNU=
-		</data>
-		<key>data/pauseButton.jpg</key>
-		<data>
-		0g+xrZwENf1AwA7r8DF8Rlnwj6c=
-		</data>
-		<key>data/playButton.jpg</key>
-		<data>
-		5P9Mxhj86pzZytPWzAXz7C76d4Y=
-		</data>
-		<key>data/rain.mp3</key>
-		<data>
-		YOj+MZ7plTQgQ8TgE4Mp/8dlGv4=
-		</data>
-		<key>data/resumeButton.jpg</key>
-		<data>
-		4lPTJU77GYX97GyyNMCRTG4Wt0M=
-		</data>
-		<key>data/splashScreen.jpg</key>
-		<data>
-		FU3SF6jt/mqD/IXFpW9p/LeTEfE=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
 		FCglesRSlxoUsXJlhUNLNWCococ=
+		</data>
+		<key>floatGroundMiddle.jpg</key>
+		<data>
+		GBinU6cxxDqbJUE/F81u4V4BMbo=
+		</data>
+		<key>font.fnt</key>
+		<data>
+		DH+2WKZQ8NDdXiXYyOhqF+qQ9Dg=
+		</data>
+		<key>font.jpg</key>
+		<data>
+		QJXRFu1W1etazLxGTsyL6rSDU3w=
 		</data>
 		<key>gdx-backend-ios.dll</key>
 		<data>
@@ -372,45 +164,77 @@
 		<data>
 		np3pKC0PpY/W9DKlAtRoBShwLYs=
 		</data>
+		<key>homebg.jpg</key>
+		<data>
+		4snKndugV8tHsRuZRql3IAfhBVo=
+		</data>
 		<key>iosgame.exe</key>
 		<data>
-		pbU70dFNny3MZOJdXQcXQLrknBM=
+		RgdxEX/1qzzBhUAOFsbtG/c/0pM=
 		</data>
 		<key>iosgame.exe.mdb</key>
 		<data>
-		DNOtUSPlLHTXFDwZMSzAx3fdhQQ=
+		8gl3hxuWY+zHkYCRrfH12Msk52c=
 		</data>
 		<key>libObjectAL.dll</key>
 		<data>
-		deqoe9wtxdWAy+hbs+Qf2//36Ik=
+		cBs0uQGFNo/yI97GEjn7/Myzxes=
 		</data>
-		<key>libgdx.png</key>
+		<key>mainButton.jpg</key>
 		<data>
-		H7pHRFP8D+CX4DbqwFeyVdNWzIA=
+		k1lWA4v+n+R+rXpXqGrPyoXKKFY=
+		</data>
+		<key>manjump.jpg</key>
+		<data>
+		nkNKZEm06Z0vfl2e0mH9gPXVEXQ=
+		</data>
+		<key>megaman.jpg</key>
+		<data>
+		ZJ5+BtygQ5qWhDEERnDOS0s9gCo=
+		</data>
+		<key>menubg.jpg</key>
+		<data>
+		Hi4Wr9PM0UbGyLOrRA2LnrFoqNU=
 		</data>
 		<key>monotouch.dll</key>
 		<data>
-		5dYqu+40e5PlTC9nNKrnebN3+34=
+		J7iXS3l+s0CcNiJVCfzeukTJJjA=
 		</data>
 		<key>monotouch.dll.mdb</key>
 		<data>
-		G86pFnlenpTI1H1Rmrzy86S2RxM=
+		9as/x5zkrdZQB8TEabyKwJikobM=
 		</data>
 		<key>mscorlib.dll</key>
 		<data>
-		bIKdYF3FoN0MGqahSiGH2EuDWCs=
+		D8p/RXZln4uBSkf8TV8tYRtRdq8=
 		</data>
 		<key>mscorlib.dll.mdb</key>
 		<data>
-		HWyT4VUT9LQyBowvJC9U4xflhQs=
+		U1A6l49OG/xdYaADqCD3FR+XPlk=
 		</data>
 		<key>my-gdx-game.dll</key>
 		<data>
-		ylDXurIk8AcUo36M0beIGLfQP3I=
+		CWL2xoj6CAaUEI2ox/T9hYk0ebc=
 		</data>
 		<key>my-gdx-game.dll.mdb</key>
 		<data>
-		Mh6eadkKbfTtmKM61JJEZWzEQns=
+		9M7YN8Wnmm12mpq6nE0RwOPsB5U=
+		</data>
+		<key>pauseButton.jpg</key>
+		<data>
+		0g+xrZwENf1AwA7r8DF8Rlnwj6c=
+		</data>
+		<key>playButton.jpg</key>
+		<data>
+		5P9Mxhj86pzZytPWzAXz7C76d4Y=
+		</data>
+		<key>resumeButton.jpg</key>
+		<data>
+		4lPTJU77GYX97GyyNMCRTG4Wt0M=
+		</data>
+		<key>splashScreen.jpg</key>
+		<data>
+		FU3SF6jt/mqD/IXFpW9p/LeTEfE=
 		</data>
 	</dict>
 	<key>rules</key>

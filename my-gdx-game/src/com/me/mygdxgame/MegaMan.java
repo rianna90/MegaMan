@@ -21,10 +21,10 @@ public class MegaMan extends Actor {
     public boolean left = false;
     public boolean jump = false;
     
-    public float _posX, _posY;     		 // Position of the character
-    private float _velocityY = 0;    		// Velocity of the character
-    private float _gravity = 0.5f;           // How strong is gravity
-    private boolean onGround = false;
+    //public float _posX, _posY;     		 // Position of the character
+    //private float _velocityY = 0;    		// Velocity of the character
+    //private float _gravity = 0.5f;           // How strong is gravity
+    //private boolean onGround = false;
     
     boolean jumping; //Is the character jumping?
     float startY, jumpspeed = 0; //startY to tell us //where it lands, jumpspeed to see how fast it jumps
@@ -33,7 +33,7 @@ public class MegaMan extends Actor {
     private float _velocityX = 4.0f;
     private float _velocityY = 0;    				// Velocity of the character
     private float _gravity = 0.5f;           // How strong is gravity
-    private boolean onGround= false;
+    private boolean onGround = false;
 
     
     public enum MegaManState
