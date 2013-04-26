@@ -1,15 +1,18 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.iPhone" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Main.cs">
     <Files>
-      <File FileName="Main.cs" Line="33" Column="1" />
+      <File FileName="Main.cs" Line="25" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True" selected="True">
+        <State expanded="True">
           <Option id="ShowAllFiles" value="True" />
           <Node name="my-gdx-game-ios" expanded="True">
-            <Node name="assets" expanded="True" />
+            <Node name="assets" expanded="True">
+              <Node name="splashScreen.jpg" selected="True" />
+            </Node>
+            <Node name="libs" expanded="True" />
           </Node>
         </State>
       </Pad>

@@ -33,28 +33,29 @@ public class Assets{
 		
 	public static void load(){
 		
-		splash = loadTexture("libgdx.png");
+		splash = loadTexture("splashScreen.jpg");
 			
-		bg = loadTexture("bg.png");	
-		playBtn = loadTexture("playButton.png");
-		pauseBtn = loadTexture("pauseButton.png");
-		resumeBtn = loadTexture("resumeButton.png");
-		mainBtn = loadTexture("mainButton.png");
+		bg = loadTexture("bg.jpg");	
+		playBtn = loadTexture("playButton.jpg");
+		pauseBtn = loadTexture("pauseButton.jpg");
+		resumeBtn = loadTexture("resumeButton.jpg");
+		mainBtn = loadTexture("mainButton.jpg");	
 		
-		megaman = loadTexture("megaman.png");	
-		megamanJump = loadTexture("manjump.png");
-		background = loadTexture("background.png");	
-		//background = loadTexture("background.jpg");
-		platformBase = loadTexture("bottomGround.png");
-		platformMiddle = loadTexture("floatGroundMiddle.png");
-		menubg = loadTexture("menubg.png");
-		homebg = loadTexture("homebg.png");
-		charfullbody = loadTexture("charfullbody.png");
-		coin = loadTexture("coin.png");
+		
+		megaman = loadTexture("megaman.jpg");	
+		megamanJump = loadTexture("manjump.jpg");
+		
+		
+		platformBase = loadTexture("bottomGround.jpg");
+		platformMiddle = loadTexture("floatGroundMiddle.jpg");
+		menubg = loadTexture("menubg.jpg");
+		homebg = loadTexture("homebg.jpg");
+		charfullbody = loadTexture("charfullbody.jpg");
+		coin = loadTexture("coin.jpg");
 
-		font = new BitmapFont(Gdx.files.internal("font.fnt"), Gdx.files.internal("font.png"), false);
+		font = new BitmapFont(Gdx.files.internal("font.fnt"), Gdx.files.internal("font.jpg"), false);
 		
-		btn = loadTexture("btn.png");	
+		btn = loadTexture("btn.jpg");	
 	}
 }
 

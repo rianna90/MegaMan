@@ -21,14 +21,14 @@ public class GameScreen implements Screen,  InputProcessor  {
 	private MegaMan mm;
 	private Sprite leftArrowBtn;
 	private Sprite rightArrowBtn;
+	private Sprite upArrowBtn;
+	
 	private Sprite pauseBtn;
     private Vector3 touchpoint;
     //private Coins coins;
     private String coinText;
     private int amountOfCoins;
     private Pedometer pd;
-
-    
     
 	public GameScreen(Game g) {		
 		
@@ -68,6 +68,12 @@ public class GameScreen implements Screen,  InputProcessor  {
         rightArrowBtn.setScale(1.5f);
         rightArrowBtn.draw(spriteBatch);
         
+        upArrowBtn = new Sprite(Assets.btn);
+        upArrowBtn.setPosition(740, 10);
+        upArrowBtn.rotate(-90);
+        upArrowBtn.setScale(1.5f);
+        upArrowBtn.draw(spriteBatch);
+        
         pauseBtn = new Sprite(Assets.pauseBtn);
         pauseBtn.setPosition(290, 400);
         pauseBtn.draw(spriteBatch);
@@ -86,7 +92,10 @@ public class GameScreen implements Screen,  InputProcessor  {
 
 	@Override
 	public void show() {
-		
+		spriteBatch = new SpriteBatch();		
+		camera = new OrthographicCamera();
+	    camera.setToOrtho(false, 800, 600);	
+	    
 		coinText = "Coins: " + amountOfCoins;
 		
 		stage = new Stage(Gdx.graphics.getWidth(),Gdx.graphics.getHeight(), true);
@@ -94,12 +103,7 @@ public class GameScreen implements Screen,  InputProcessor  {
 		mm = new MegaMan();		
 		stage.addActor(mm);
 		
-		platform = new Platform();	
-		spriteBatch = new SpriteBatch();
-		
-		
-		camera = new OrthographicCamera();
-	    camera.setToOrtho(false, 800, 480);		
+		platform = new Platform();		
 	    
 	    pd = new Pedometer();
 	   
@@ -162,6 +166,10 @@ public class GameScreen implements Screen,  InputProcessor  {
 			mm.setSpeed(2);			
 		}
 		
+		if(upArrowBtn.getBoundingRectangle().contains(touchpoint.x, touchpoint.y))
+		{
+			mm.state = MegaManState.JumpUp;	
+		}		
 		
 		if(pauseBtn.getBoundingRectangle().contains(touchpoint.x, touchpoint.y))
 		{
@@ -175,7 +183,8 @@ public class GameScreen implements Screen,  InputProcessor  {
 	public boolean touchUp(int screenX, int screenY, int pointer, int button) {
 	
 		mm.state = MegaManState.Standing;
-		
+		//mm.state = MegaManState.JumpDown;
+
 		return false;
 	}
 
