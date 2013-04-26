@@ -33,6 +33,7 @@ public class Assets{
 		splash = loadTexture("splashScreen.jpg");
 		// Menu's
 		bg = loadTexture("bg.jpg");	
+		
 		playBtn = loadTexture("playButton.jpg");
 		pauseBtn = loadTexture("pauseButton.jpg");
 		resumeBtn = loadTexture("resumeButton.jpg");

@@ -159,143 +159,69 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Info.plist" />
     <None Include="libs\ios\libgdx.a" />
     <None Include="libs\ios\ikvm\bin\libikvm-natives.a" />
+    <None Include="Info.plist" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Content Include="libgdx.png" />
-    <Content Include="..\my-gdx-game-android\assets\font.fnt">
-      <Link>data\font.fnt</Link>
-    </Content>
-    <Content Include="..\my-gdx-game-android\assets\background.jpg">
-      <Link>data\background.jpg</Link>
+    <Folder Include="data\" />
+    <Folder Include="assets\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\my-gdx-game-android\assets\splashScreen.jpg">
+      <Link>splashScreen.jpg</Link>
     </Content>
     <Content Include="..\my-gdx-game-android\assets\bg.jpg">
-      <Link>data\bg.jpg</Link>
-    </Content>
-    <Content Include="..\my-gdx-game-android\assets\bottomGround.jpg">
-      <Link>data\bottomGround.jpg</Link>
-    </Content>
-    <Content Include="..\my-gdx-game-android\assets\btn.jpg">
-      <Link>data\btn.jpg</Link>
-    </Content>
-    <Content Include="..\my-gdx-game-android\assets\charfullbody.jpg">
-      <Link>data\charfullbody.jpg</Link>
-    </Content>
-    <Content Include="..\my-gdx-game-android\assets\coin.jpg">
-      <Link>data\coin.jpg</Link>
-    </Content>
-    <Content Include="..\my-gdx-game-android\assets\exitButton.jpg">
-      <Link>data\exitButton.jpg</Link>
-    </Content>
-    <Content Include="..\my-gdx-game-android\assets\floatGroundLeft.jpg">
-      <Link>data\floatGroundLeft.jpg</Link>
-    </Content>
-    <Content Include="..\my-gdx-game-android\assets\floatGroundMiddle.jpg">
-      <Link>data\floatGroundMiddle.jpg</Link>
-    </Content>
-    <Content Include="..\my-gdx-game-android\assets\floatGroundRight.jpg">
-      <Link>data\floatGroundRight.jpg</Link>
-    </Content>
-    <Content Include="..\my-gdx-game-android\assets\font.jpg">
-      <Link>data\font.jpg</Link>
-    </Content>
-    <Content Include="..\my-gdx-game-android\assets\homebg.jpg">
-      <Link>data\homebg.jpg</Link>
-    </Content>
-    <Content Include="..\my-gdx-game-android\assets\mainButton.jpg">
-      <Link>data\mainButton.jpg</Link>
-    </Content>
-    <Content Include="..\my-gdx-game-android\assets\manjump.jpg">
-      <Link>data\manjump.jpg</Link>
-    </Content>
-    <Content Include="..\my-gdx-game-android\assets\megaman.jpg">
-      <Link>data\megaman.jpg</Link>
-    </Content>
-    <Content Include="..\my-gdx-game-android\assets\menubg.jpg">
-      <Link>data\menubg.jpg</Link>
+      <Link>bg.jpg</Link>
     </Content>
     <Content Include="..\my-gdx-game-android\assets\pauseButton.jpg">
-      <Link>data\pauseButton.jpg</Link>
-    </Content>
-    <Content Include="..\my-gdx-game-android\assets\playButton.jpg">
-      <Link>data\playButton.jpg</Link>
-    </Content>
-    <Content Include="..\my-gdx-game-android\assets\rain.mp3">
-      <Link>data\rain.mp3</Link>
+      <Link>pauseButton.jpg</Link>
     </Content>
     <Content Include="..\my-gdx-game-android\assets\resumeButton.jpg">
-      <Link>data\resumeButton.jpg</Link>
+      <Link>resumeButton.jpg</Link>
     </Content>
-    <Content Include="..\my-gdx-game-android\assets\splashScreen.jpg">
-      <Link>data\splashScreen.jpg</Link>
+    <Content Include="..\my-gdx-game-android\assets\mainButton.jpg">
+      <Link>mainButton.jpg</Link>
     </Content>
-    <Content Include="..\..\..\..\..\Desktop\gameassets\bg.jpg">
-      <Link>assets\data\bg.jpg</Link>
+    <Content Include="..\my-gdx-game-android\assets\playButton.jpg">
+      <Link>playButton.jpg</Link>
     </Content>
-    <Content Include="..\..\..\..\..\Desktop\gameassets\bottomGround.jpg">
-      <Link>assets\data\bottomGround.jpg</Link>
+    <Content Include="..\my-gdx-game-android\assets\megaman.jpg">
+      <Link>megaman.jpg</Link>
     </Content>
-    <Content Include="..\..\..\..\..\Desktop\gameassets\btn.jpg">
-      <Link>assets\data\btn.jpg</Link>
+    <Content Include="..\my-gdx-game-android\assets\manjump.jpg">
+      <Link>manjump.jpg</Link>
     </Content>
-    <Content Include="..\..\..\..\..\Desktop\gameassets\charfullbody.jpg">
-      <Link>assets\data\charfullbody.jpg</Link>
+    <Content Include="..\my-gdx-game-android\assets\bottomGround.jpg">
+      <Link>bottomGround.jpg</Link>
     </Content>
-    <Content Include="..\..\..\..\..\Desktop\gameassets\coin.jpg">
-      <Link>assets\data\coin.jpg</Link>
+    <Content Include="..\my-gdx-game-android\assets\floatGroundMiddle.jpg">
+      <Link>floatGroundMiddle.jpg</Link>
     </Content>
-    <Content Include="..\..\..\..\..\Desktop\gameassets\exitButton.jpg">
-      <Link>assets\data\exitButton.jpg</Link>
+    <Content Include="..\my-gdx-game-android\assets\menubg.jpg">
+      <Link>menubg.jpg</Link>
     </Content>
-    <Content Include="..\..\..\..\..\Desktop\gameassets\floatGroundLeft.jpg">
-      <Link>assets\data\floatGroundLeft.jpg</Link>
+    <Content Include="..\my-gdx-game-android\assets\homebg.jpg">
+      <Link>homebg.jpg</Link>
     </Content>
-    <Content Include="..\..\..\..\..\Desktop\gameassets\floatGroundMiddle.jpg">
-      <Link>assets\data\floatGroundMiddle.jpg</Link>
+    <Content Include="..\my-gdx-game-android\assets\charfullbody.jpg">
+      <Link>charfullbody.jpg</Link>
     </Content>
-    <Content Include="..\..\..\..\..\Desktop\gameassets\floatGroundRight.jpg">
-      <Link>assets\data\floatGroundRight.jpg</Link>
+    <Content Include="..\my-gdx-game-android\assets\coin.jpg">
+      <Link>coin.jpg</Link>
     </Content>
-    <Content Include="..\..\..\..\..\Desktop\gameassets\font.jpg">
-      <Link>assets\data\font.jpg</Link>
+    <Content Include="..\my-gdx-game-android\assets\font.fnt">
+      <Link>font.fnt</Link>
     </Content>
-    <Content Include="..\..\..\..\..\Desktop\gameassets\homebg.jpg">
-      <Link>assets\data\homebg.jpg</Link>
+    <Content Include="..\my-gdx-game-android\assets\font.jpg">
+      <Link>font.jpg</Link>
     </Content>
-    <Content Include="..\..\..\..\..\Desktop\gameassets\mainButton.jpg">
-      <Link>assets\data\mainButton.jpg</Link>
-    </Content>
-    <Content Include="..\..\..\..\..\Desktop\gameassets\manjump.jpg">
-      <Link>assets\data\manjump.jpg</Link>
-    </Content>
-    <Content Include="..\..\..\..\..\Desktop\gameassets\megaman.jpg">
-      <Link>assets\data\megaman.jpg</Link>
-    </Content>
-    <Content Include="..\..\..\..\..\Desktop\gameassets\menubg.jpg">
-      <Link>assets\data\menubg.jpg</Link>
-    </Content>
-    <Content Include="..\..\..\..\..\Desktop\gameassets\pauseButton.jpg">
-      <Link>assets\data\pauseButton.jpg</Link>
-    </Content>
-    <Content Include="..\..\..\..\..\Desktop\gameassets\playButton.jpg">
-      <Link>assets\data\playButton.jpg</Link>
-    </Content>
-    <Content Include="..\..\..\..\..\Desktop\gameassets\resumeButton.jpg">
-      <Link>assets\data\resumeButton.jpg</Link>
-    </Content>
-    <Content Include="..\..\..\..\..\Desktop\gameassets\splashScreen.jpg">
-      <Link>assets\data\splashScreen.jpg</Link>
+    <Content Include="..\my-gdx-game-android\assets\btn.jpg">
+      <Link>btn.jpg</Link>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="data\" />
-    <Folder Include="assets\" />
-    <Folder Include="assets\data\" />
   </ItemGroup>
 </Project>
