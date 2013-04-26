@@ -6,7 +6,7 @@ import com.badlogic.gdx.Gdx;
 public class Pedometer implements ApplicationListener {
 	
 	private float mLastX, mLastY, mLastZ;
-	private final float NOISE = (float) 8.0;
+	private final float NOISE = (float) 7.0;
 	
 	public Pedometer()
 	{
@@ -43,19 +43,18 @@ public class Pedometer implements ApplicationListener {
 
 		// horizontal
 		if (deltaX > deltaY) {
-			Gdx.app.log("Pedometer", "horizontal");
-			Steps.getInstance().addSteps(1);
+			//Gdx.app.log("Pedometer", "horizontal");
+			Step.getInstance().addSteps(1);
 
 		// vertical
 		} else if (deltaY > deltaX) {
-			Gdx.app.log("Pedometer", "vertical");
-			Steps.getInstance().addSteps(1);
+			//Gdx.app.log("Pedometer", "vertical");
+			Step.getInstance().addSteps(1);
 		} 
 	}
 
 	@Override
 	public void pause() {
-		Gdx.app.log("Pedometer", "pauze");
 	}
 
 	@Override

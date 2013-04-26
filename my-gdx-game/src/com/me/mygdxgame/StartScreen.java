@@ -16,10 +16,8 @@ public class StartScreen implements Screen, InputProcessor {
 	private OrthographicCamera camera;
     private Game myGame;
     private Sprite playBtn;
-    //private String homeText;   
     private String stepsText;
     
-    private int number;
     private float btnAlpha;
     private boolean start = false;
     private Vector3 touchpoint;
@@ -37,7 +35,7 @@ public class StartScreen implements Screen, InputProcessor {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 	    camera.update();	
 	    
-	    stepsText = "Steps:  " + Steps.getInstance().steps + "  / 15";
+	    stepsText = "Steps:  " + Step.getInstance().steps + "  / 15";
 	    
 	    spriteBatch.setProjectionMatrix(camera.combined);
 	   
@@ -50,16 +48,15 @@ public class StartScreen implements Screen, InputProcessor {
 	    playBtn.setPosition(290, 100);
 	    playBtn.draw(spriteBatch, btnAlpha);
 
-        if(Steps.getInstance().steps >= 15)
+        if(Step.getInstance().steps >= 15)
         {       
-        	Gdx.app.log("StartScreen", Integer.toString(Steps.getInstance().steps) );
+        	//Gdx.app.log("StartScreen", Integer.toString(Step.getInstance().steps) );
         	btnAlpha = 10;
 	        start = true;
         }
         
         spriteBatch.draw(Assets.platformBase,  0, 0, 800, 28, 0, 0, 800, 28, false, false);
         spriteBatch.setColor(1.0f, 1.0f, 1.0f, 1.0f);
-        //Assets.font.draw(spriteBatch, homeText, 16, 480 - 20);
         Assets.font.draw(spriteBatch, stepsText, 480, 480);
         spriteBatch.end();
         
@@ -75,9 +72,7 @@ public class StartScreen implements Screen, InputProcessor {
 	@Override
 	public void show() {
 		pd = new Pedometer();
-		number = 10;
 		btnAlpha = 70;
-		//homeText = "Experience Points " + number;
 		spriteBatch = new SpriteBatch();
 		camera = new OrthographicCamera();
 		camera.setToOrtho(false, 800, 600);	
@@ -127,19 +122,17 @@ public class StartScreen implements Screen, InputProcessor {
 		
 		if(start == true)
 		{
-
 			if(playBtn.getBoundingRectangle().contains(touchpoint.x, touchpoint.y))
 			{
 				myGame.setScreen(new GameScreen(myGame));
-				Steps.getInstance().steps = 0;
+				Step.getInstance().steps = 0;
 				dispose();
 			}
 			
 			return true;
 		}
 		
-		return false;
-				
+		return false;				
 	}
 
 	@Override

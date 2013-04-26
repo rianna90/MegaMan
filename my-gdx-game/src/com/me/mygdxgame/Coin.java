@@ -1,5 +1,6 @@
 package com.me.mygdxgame;
 
+// Singleton voor het bijhouden van alle coins
 public class Coin {
 	
 	private static Coin theInstance;

@@ -36,7 +36,6 @@ public class SplashScreen implements Screen {
 
         	myGame.setScreen(new StartScreen(myGame));   
         	//myGame.setScreen(new GameScreen(myGame));
-
         }			
 	}
 

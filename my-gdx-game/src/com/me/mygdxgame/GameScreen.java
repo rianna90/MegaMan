@@ -16,6 +16,7 @@ import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.TimeUtils;
 import com.me.mygdxgame.MegaMan.MegaManState;
 
+// Screen waarin het level zich afspeelt
 public class GameScreen implements Screen,  InputProcessor  {
 
 	private SpriteBatch spriteBatch;
@@ -25,8 +26,8 @@ public class GameScreen implements Screen,  InputProcessor  {
 	private MegaMan mm;
 	private Sprite leftArrowBtn;
 	private Sprite rightArrowBtn;
-	private Sprite upArrowBtn;
-	
+	private float leftBtnAlpha;
+    private float rightBtnAlpha;
 	//private Sprite upArrowBtn;	
 
 	private Sprite pauseBtn;
@@ -35,9 +36,7 @@ public class GameScreen implements Screen,  InputProcessor  {
     private Array<Rectangle> coins;
     private long lastDropTime;
     private String coinText;
-    private int amountOfCoins;
-    private Pedometer pd;
-    
+      
 	public GameScreen(Game g) {		
 		
 		myGame = g;
@@ -59,26 +58,25 @@ public class GameScreen implements Screen,  InputProcessor  {
 	    mm.act(delta); 
 	    
         leftArrowBtn = new Sprite(Assets.btn);
-        leftArrowBtn.setPosition(50, 10);
-        leftArrowBtn.setScale(1.5f);
-        leftArrowBtn.draw(spriteBatch);
+        leftArrowBtn.setPosition(50, 30);
+        leftArrowBtn.setScale(2);
+        leftArrowBtn.draw(spriteBatch, leftBtnAlpha);
 	    
         rightArrowBtn = new Sprite(Assets.btn);
         rightArrowBtn.rotate(180);
-        rightArrowBtn.setPosition(700, 10);
-        rightArrowBtn.setScale(1.5f);
-        rightArrowBtn.draw(spriteBatch);
+        rightArrowBtn.setPosition(700, 30);
+        rightArrowBtn.setScale(2);
+        rightArrowBtn.draw(spriteBatch, rightBtnAlpha);
         
-
        // upArrowBtn = new Sprite(Assets.btn);
        // upArrowBtn.setPosition(740, 10);
        // upArrowBtn.rotate(-90);
        // upArrowBtn.setScale(1.5f);
        // upArrowBtn.draw(spriteBatch);
-
-        
+       
         pauseBtn = new Sprite(Assets.pauseBtn);
-        pauseBtn.setPosition(750, 550);
+        pauseBtn.scale(0.5f);
+        pauseBtn.setPosition(730, 540);
         pauseBtn.draw(spriteBatch);
         
 		coinText = "Coins: " + Coin.getInstance().coins;
@@ -96,7 +94,7 @@ public class GameScreen implements Screen,  InputProcessor  {
 		//	mm.state = MegaManState.HitPlatform;
 		//}
 	    
-	    if(TimeUtils.nanoTime() - lastDropTime > 1000000000) spawnRaindrop();
+	    if(TimeUtils.nanoTime() - lastDropTime > 1000000000) spawnCoindrop();
 	    
 	    Iterator<Rectangle> iter = coins.iterator();
 	    while(iter.hasNext()) {
@@ -105,7 +103,6 @@ public class GameScreen implements Screen,  InputProcessor  {
 	       if(coin.y + 48 < 0) iter.remove();
 	       
 	       if(coin.overlaps(mm.BoundingBox())) {
-	           //dropSound.play();
 	    	   Coin.getInstance().addCoins(1);
 	           iter.remove();
 	        }
@@ -123,13 +120,15 @@ public class GameScreen implements Screen,  InputProcessor  {
 		spriteBatch = new SpriteBatch();		
 		camera = new OrthographicCamera();
 	    camera.setToOrtho(false, 800, 600);	
-
+	    leftBtnAlpha = 70;
+	    rightBtnAlpha = 70;
+	    
 		mm = new MegaMan();		
 		coins = new Array<Rectangle>();
-		spawnRaindrop();
+		spawnCoindrop();
 	}
 	
-	private void spawnRaindrop() 
+	private void spawnCoindrop() 
 	{
 		      Rectangle raindrop = new Rectangle();
 		      raindrop.x = MathUtils.random(0, 800-48);
@@ -138,7 +137,6 @@ public class GameScreen implements Screen,  InputProcessor  {
 		      raindrop.height = 48;
 		      coins.add(raindrop);
 		      lastDropTime = TimeUtils.nanoTime();
-
 	}
 
 	@Override
@@ -160,7 +158,6 @@ public class GameScreen implements Screen,  InputProcessor  {
 	public void dispose() {
 		spriteBatch.dispose();
 	     Assets.coin.dispose();
-	     //dropSound.dispose();
 	}
 
 	@Override
@@ -189,6 +186,7 @@ public class GameScreen implements Screen,  InputProcessor  {
 		
 		if(leftArrowBtn.getBoundingRectangle().contains(touchpoint.x, touchpoint.y))
 		{
+			leftBtnAlpha = 10;
 			mm.state = MegaManState.WalkLeft;
 			mm.left = true;
 			mm.setSpeed(-5);		
@@ -196,6 +194,7 @@ public class GameScreen implements Screen,  InputProcessor  {
 		
 		if(rightArrowBtn.getBoundingRectangle().contains(touchpoint.x, touchpoint.y))
 		{
+			rightBtnAlpha = 10;
 			mm.state = MegaManState.WalkRight;
 			mm.left = false;
 
@@ -219,6 +218,8 @@ public class GameScreen implements Screen,  InputProcessor  {
 	@Override
 	public boolean touchUp(int screenX, int screenY, int pointer, int button) {
 	
+		rightBtnAlpha = 70;
+		leftBtnAlpha = 70;
 		mm.state = MegaManState.Standing;
 
 		//if(mm.jump == true)

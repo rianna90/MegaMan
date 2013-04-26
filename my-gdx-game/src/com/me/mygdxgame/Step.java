@@ -1,20 +1,21 @@
 package com.me.mygdxgame;
 
-public class Steps {
+//Singleton voor het bijhouden van alle stappen
+public class Step {
 	
-	private static Steps theInstance;
+	private static Step theInstance;
 	public int steps;
 	
-	private Steps()
+	private Step()
 	{
 		steps = 0;
 	}
 	
-    public static Steps getInstance()
+    public static Step getInstance()
     {
         if (theInstance == null)
         {
-        	theInstance = new Steps();
+        	theInstance = new Step();
         }
         
         return theInstance;
@@ -24,5 +25,4 @@ public class Steps {
     {
         steps += s;
     }
-
 }
